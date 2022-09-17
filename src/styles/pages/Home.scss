@@ -1,0 +1,96 @@
+body {
+    background-color: #212121;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blue {
+    color: #53C2DE;
+}
+
+.scroll-to-top {
+    background-color: #53C2DE !important;
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 9px 25px 0 rgb(132 128 177 / 28%);
+    border: none;
+}
+
+
+.first-section {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem 5rem 8rem 5rem;
+    justify-content: center;
+    min-height: 30rem;
+
+    //font
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 4.3rem;
+    color: white;
+    text-transform: capitalize;
+#button{
+background-color: #53C2DE;
+color: #FFFFFF;
+font-family: 'Roboto', sans-serif;
+font-size:18px ;
+padding: 20px 35px;
+}
+
+    .left {
+        min-width: 60%;
+        max-width: 60%;
+
+        .title {
+            max-width: 80%;
+            margin-bottom: 0px;
+        }
+
+        .sub-title {
+            max-width: 80%;
+            margin-bottom: 0px;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+
+
+    }
+
+    .right {
+        min-width: 35%;
+        max-width: 35%;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    .shape {
+
+        .bubble {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.1 !important;
+        }
+
+        .bubble2 {
+            width: 10rem;
+            position: absolute;
+            z-index: 1;
+            top: 100px;
+            right: 200px;
+            opacity: 0.2 !important;
+        }
+    }
+}

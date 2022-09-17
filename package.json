@@ -29,6 +29,7 @@
   "license": "MIT",
   "scripts": {
     "dev-server": "encore dev-server",
+    "cunnutu": "encore dev-server",
     "dev": "encore dev",
     "watch": "encore dev --watch",
     "build": "encore production --progress"
@@ -44,6 +45,7 @@
     "@types/marked": "^4.0.3",
     "@types/react-router": "^5.1.18",
     "@types/react-router-dom": "^5.3.3",
+    "aos": "2.3.3",
     "axios": "^0.27.2",
     "lodash": "^4.17.21",
     "marked": "^4.0.12",
@@ -53,6 +55,10 @@
     "react-meta-tags": "^1.0.1",
     "react-router-dom": "^6.2.2",
     "react-router-hash-link": "^2.4.3",
+    "react-scroll-to-top": "^3.0.0",
+    "react-tsparticles": "^2.3.1",
+    "react-type-animation": "^2.1.1",
+    "react-typing-animation": "^1.6.2",
     "styled-components": "^5.3.3"
   }
 }
