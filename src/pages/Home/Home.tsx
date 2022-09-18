@@ -38,8 +38,6 @@ const Home = () => {
         
         </ul>
         <ScrollToTop smooth />
-
-
       </div>
 
       {/* First Section */}
