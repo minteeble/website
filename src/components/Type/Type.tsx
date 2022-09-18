@@ -5,7 +5,6 @@ import { TypeAnimation } from 'react-type-animation';
 const Type = () => {
     return (
       <TypeAnimation 
-
         sequence={[
           1000,
           'with the Blockchain.', // Types 'One'
