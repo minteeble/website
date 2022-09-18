@@ -20,11 +20,11 @@ const Navbar = () => {
           <h1>Minteeble<span className="blue">.com</span> </h1>
         </div>
         <div className="link">
-          <ul>
-            <li>Home</li>
-            <li>Portofolio</li>
-            <li>TEAM</li>
-            <li>Contact us</li>
+          <ul className="nav-page">
+            <li className="nav-page"><a href="#home-section">Home</a></li>
+            <li className="nav-page"><a href="#">Portofolio</a></li>
+            <li className="nav-page"><a href="#team-section">TEAM</a></li>
+            <li className="nav-page"><a href="#">Contact us</a></li>
           </ul>
         </div>
       </div>
