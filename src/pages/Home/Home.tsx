@@ -23,8 +23,7 @@ const Home = () => {
       {/* First Section */}
 
       <div className="first-section">
-
-        <div className="left" id="home-section">
+        <div className="left">
           <p className="title" data-aos="fade-up">make your dreams come true </p> <Type />
           <p className="sub-title" data-aos="fade-down" >Build your own awesome <span className="blue ">Web3</span>  applications and start exploring this new world. What are you waiting for?</p>
             <input type="submit" value="GET STARTED!" id="button"/>
@@ -35,7 +34,7 @@ const Home = () => {
 
 
         <ul className="shape">
-          <li className="bubble" ><img src="https://new.axilthemes.com/demo/react/abstrak/images/others/bubble-39.png" alt="" /></li>
+          <li className="bubble" id="home-section"><img src="https://new.axilthemes.com/demo/react/abstrak/images/others/bubble-39.png" alt="" /></li>
         
         </ul>
         <ScrollToTop smooth />

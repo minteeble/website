@@ -13,7 +13,7 @@ const Navbar = () => {
   }
   window.addEventListener("scroll", setFixed);
   return (
-    <header>
+    <header >
       <div className={fix ? 'navbar fixed' : 'navbar'}>
         <div className="logo">
           <img src="/build/images/logo.png" alt="" />
