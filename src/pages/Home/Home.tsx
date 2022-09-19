@@ -5,12 +5,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "react-scroll-to-top";
 import Navbar from "../../components/Navbar";
+import {motion} from 'framer-motion';
 
 // @ts-ignore
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 
 const Home = () => {
+
+  const [isOpen,setIsOpen] = useState(false);
 
   window.addEventListener('load', function () { AOS.init(); });
 
@@ -27,9 +30,7 @@ const Home = () => {
             <input type="submit" value="GET STARTED!" id="button"/>
         </div>
 
-
         <div className="right"><img src="/build/images/second.svg" alt="" /></div>
-
         <ul className="shape">
           <li className="bubble" id="home-section"><img src="https://new.axilthemes.com/demo/react/abstrak/images/others/bubble-39.png" alt="" /></li>
         
@@ -39,6 +40,44 @@ const Home = () => {
 
       {/* First Section */}
 <hr></hr>
+
+<div className="portfolio-section">
+
+
+
+<div className="card">
+<motion.div  className="image" > <img className="image" src="/build/images/test.webp" alt="" /> </motion.div>
+
+<motion.div 
+transition={{layout:{ duration:1, type:"spring"}}}
+layout 
+style={{borderRadius: "0rem 0rem 1rem 1rem", boxShadow:"0px 10px 30px rgba(0,0,0,0.5"}} 
+onClick={ () => setIsOpen (!isOpen)} 
+className="cards">
+   <motion.h2 layout="position">Green Nft</motion.h2> 
+   <motion.p layout="position">Mint card integration</motion.p>
+{isOpen && (
+  <motion.div 
+  className="items"
+  layout="position" 
+  initial={{opacity:0}}
+  animate={{opacity:1}}
+  transition={{duration:1}}>
+  
+<div className="text">  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores unde nobis voluptatibus rerum eum tempore perferendis aliquid officia laborum! Excepturi suscipit libero architecto sint id molestias ducimus cumque itaque adipisci?</p> </div>
+
+
+  </motion.div>  )}
+
+
+</motion.div>
+</div>
+
+
+
+
+</div>
+
 
 <div className="third-section">
 

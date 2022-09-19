@@ -230,3 +230,53 @@ hr {
     }
 
 }
+
+
+.portfolio-section{
+
+    .image{
+        width: 30rem;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0rem 0rem ;
+
+    }
+
+    .card{
+ max-width: 30rem;
+    }
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+justify-content: center;
+
+    .cards{
+        max-width: 30rem;
+        display: flex;
+        border-radius: 0rem 0rem 1rem 1rem;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: #189cbd;
+        padding: 1rem;
+
+    }
+
+
+    h2{
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    p{
+        margin-top: 5px;
+    }
+
+.items{
+
+.text{
+    
+}
+}
+
+
+}
