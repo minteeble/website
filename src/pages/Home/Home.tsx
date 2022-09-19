@@ -5,15 +5,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "react-scroll-to-top";
 import Navbar from "../../components/Navbar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // @ts-ignore
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import { faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import { faCartShopping, faDisease } from "@fortawesome/free-solid-svg-icons";
+
+
 
 const Home = () => {
 
 
-
+  
   window.addEventListener('load', function () { AOS.init(); });
 
   return (
@@ -38,11 +43,30 @@ const Home = () => {
         
         </ul>
         <ScrollToTop smooth />
+        <div className="banner-social">
+        <div  className="border-line"></div>
+        <ul className="social-line">
+            <li>
+            <FontAwesomeIcon icon={faInstagram} />
+              <a href="">Instagram</a>
+            </li>
+            <li>
+            <FontAwesomeIcon icon={faTwitter} />
+              <a href="">Twitter</a>
+              
+            </li>
+            <li>
+            <FontAwesomeIcon icon={faCartShopping} />
+
+              <a href="">Fiverr</a>
+              
+            </li>
+          </ul>
+      </div> 
       </div>
-
-      {/* First Section */}
-<hr></hr>
-
+      
+     
+  {/* Third Section */} 
 <div className="third-section">
 
   <div className="section-heading">
@@ -55,7 +79,7 @@ const Home = () => {
     <div className="team-grid">
       {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
       <div className="cropper">
-  <img src="/build/images/doggeshiba.png"/>
+  <img src="/build/images/user1.jpg"/>
 </div>
 <div className="content">
       <h4>Dogge1</h4>
@@ -70,7 +94,7 @@ const Home = () => {
 <div className="team-grid">
       {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
       <div className="cropper">
-  <img src="/build/images/doggeshiba.png"/>
+  <img src="/build/images/user2.jpg"/>
 </div>
 <div className="content" id="container2">
       <h4>Dogge2</h4>
@@ -86,7 +110,7 @@ const Home = () => {
       <div className="team-grid">
       {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
       <div className="cropper">
-  <img src="/build/images/doggeshiba.png"/>
+  <img src="/build/images/user3.jpg"/>
 </div>
 <div className="content">
       <h4>Dogge3</h4>
@@ -100,6 +124,48 @@ const Home = () => {
     
 
     </div>
+  </div> 
+
+  <hr></hr>
+
+  <div className="footer">
+  <div className="container">
+    <div className="footer-top">
+      <div className="icon-row">
+        <ul className="icons">
+        <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+        </ul>
+      </div>
+    </div>
+    <div className="footer-main">
+      <div className="footer-main-row">
+        <div className="right">
+          <div className="container-right">
+            <div className="texts">
+              <h2>Get in touch!</h2>
+              <p>Le frasi in latino usate come esempio sembrano dei riti satanici</p>
+          
+            </div>
+            <div className="input">
+                <span><FontAwesomeIcon icon={faInstagram} /></span>
+                <input type="email" className="footer-email" placeholder="Email address"/>  
+                <input type="submit" className="footer-submit" value="Subscribe"/>
+                </div>
+          </div>
+        </div>
+        <div className="left">
+          </div>
+      </div>
+    </div>
+    <div className="footer-bottom"></div>
+  </div>
   </div>
 </div>
   );
