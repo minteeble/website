@@ -17,8 +17,11 @@ import { faCartShopping, faDisease } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
 
+<<<<<<< HEAD
 
   
+=======
+>>>>>>> 312ed5b08d7ca6b2a703bf6fbecb6c31ec2e6c12
   window.addEventListener('load', function () { AOS.init(); });
 
   return (
@@ -36,7 +39,6 @@ const Home = () => {
 
 
         <div className="right"><img src="/build/images/second.svg" alt="" /></div>
-
 
         <ul className="shape">
           <li className="bubble" id="home-section"><img src="https://new.axilthemes.com/demo/react/abstrak/images/others/bubble-39.png" alt="" /></li>
