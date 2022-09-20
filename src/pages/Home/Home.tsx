@@ -5,41 +5,66 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "react-scroll-to-top";
 import Navbar from "../../components/Navbar";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 // @ts-ignore
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
-import { faGithub, faInstagram, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faCartShopping, faDisease, faMailBulk, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-
-
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faCartShopping,
+  faDisease,
+  faMailBulk,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
-
+  const [email, setEmail] = useState<string>("");
 
   const [isOpen, setIsOpen] = useState(false);
 
-  window.addEventListener('load', function () { AOS.init(); });
+  window.addEventListener("load", function () {
+    AOS.init();
+  });
 
   return (
-    <div className="home-page" >
+    <div className="home-page">
       <Navbar />
 
       {/* First Section */}
 
       <div className="first-section">
         <div className="left">
-          <p className="title" data-aos="fade-up">make your dreams come true </p> <Type />
-          <p className="sub-title" data-aos="fade-down" >Build your own awesome <span className="blue ">Web3</span>  applications and start exploring this new world. What are you waiting for?</p>
+          <p className="title" data-aos="fade-up">
+            make your dreams come true{" "}
+          </p>{" "}
+          <Type />
+          <p className="sub-title" data-aos="fade-down">
+            Build your own awesome <span className="blue ">Web3</span>{" "}
+            applications and start exploring this new world. What are you
+            waiting for?
+          </p>
           <input type="submit" value="GET STARTED!" id="button" />
         </div>
 
-        <div className="right"><img src="/build/images/second.svg" alt="" /></div>
+        <div className="right">
+          <img src="/build/images/second.svg" alt="" />
+        </div>
         <ul className="shape">
-          <li className="bubble" id="home-section"><img src="https://new.axilthemes.com/demo/react/abstrak/images/others/bubble-39.png" alt="" /></li>
-
+          <li className="bubble" id="home-section">
+            <img
+              src="https://new.axilthemes.com/demo/react/abstrak/images/others/bubble-39.png"
+              alt=""
+            />
+          </li>
         </ul>
         <ScrollToTop smooth />
         <div className="banner-social">
@@ -52,13 +77,11 @@ const Home = () => {
             <li>
               <FontAwesomeIcon icon={faTwitter} />
               <a href="">Twitter</a>
-
             </li>
             <li>
               <FontAwesomeIcon icon={faCartShopping} />
 
               <a href="">Fiverr</a>
-
             </li>
           </ul>
         </div>
@@ -66,20 +89,23 @@ const Home = () => {
 
       {/* First Section */}
 
-
       <div className="portfolio-section">
-
-
-
         <div className="card">
-          <motion.div className="image" > <img className="image" src="/build/images/test.webp" alt="" /> </motion.div>
+          <motion.div className="image">
+            {" "}
+            <img className="image" src="/build/images/test.webp" alt="" />{" "}
+          </motion.div>
 
           <motion.div
             transition={{ layout: { duration: 1, type: "spring" } }}
             layout
-            style={{ borderRadius: "0rem 0rem 1rem 1rem", boxShadow: "0px 10px 30px rgba(0,0,0,0.5" }}
+            style={{
+              borderRadius: "0rem 0rem 1rem 1rem",
+              boxShadow: "0px 10px 30px rgba(0,0,0,0.5",
+            }}
             onClick={() => setIsOpen(!isOpen)}
-            className="cards">
+            className="cards"
+          >
             <motion.h2 layout="position">Green Nft</motion.h2>
             <motion.p layout="position">Mint card integration</motion.p>
             {isOpen && (
@@ -88,29 +114,35 @@ const Home = () => {
                 layout="position"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}>
-
-                <div className="text">  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores unde nobis voluptatibus rerum eum tempore perferendis aliquid officia laborum! Excepturi suscipit libero architecto sint id molestias ducimus cumque itaque adipisci?</p> </div>
-
-
-              </motion.div>)}
-
-
+                transition={{ duration: 1 }}
+              >
+                <div className="text">
+                  {" "}
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores unde nobis voluptatibus rerum eum tempore
+                    perferendis aliquid officia laborum! Excepturi suscipit
+                    libero architecto sint id molestias ducimus cumque itaque
+                    adipisci?
+                  </p>{" "}
+                </div>
+              </motion.div>
+            )}
           </motion.div>
         </div>
-
-
-
-
       </div>
 
-
       <div className="third-section" id="team-section">
-
-        <div className="section-heading" >
+        <div className="section-heading">
           <span>Our Valus</span>
-          <h1 >Meet the <span className="text-blue">Minteeble</span> company</h1>
-          <p> We are ordinary people who, like you, want to achieve one goal: to make your project according to your wishes</p>
+          <h1>
+            Meet the <span className="text-blue">Minteeble</span> company
+          </h1>
+          <p>
+            {" "}
+            We are ordinary people who, like you, want to achieve one goal: to
+            make your project according to your wishes
+          </p>
         </div>
         <div className="row-grid">
           <div className="container">
@@ -125,8 +157,12 @@ const Home = () => {
                 </span> */}
               </div>
               <div className="socials">
-              <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href=""><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href="">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a href="">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
               </div>
             </div>
           </div>
@@ -142,8 +178,12 @@ const Home = () => {
                 </span> */}
               </div>
               <div className="socials">
-              <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href=""><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href="">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a href="">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
               </div>
             </div>
           </div>
@@ -160,27 +200,48 @@ const Home = () => {
                 </span> */}
               </div>
               <div className="socials">
-              <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href=""><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href="">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a href="">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
-
 
       <div className="footer">
         <div className="container">
           <div className="footer-top">
             <div className="icon-row">
               <ul className="icons">
-                <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faGithub} /></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faYoutube} /></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faCartShopping} /></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faTwitter} /></a></li>
+                <li>
+                  <a href="">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <FontAwesomeIcon icon={faYoutube} />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <FontAwesomeIcon icon={faCartShopping} />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -190,25 +251,69 @@ const Home = () => {
                 <div className="container-right">
                   <div className="texts">
                     <h2>Get in touch!</h2>
-                    <p>Subscribe and we will shortly contact you: let's make your dream true! </p>
-
+                    <p>
+                      Subscribe and we will shortly contact you: let's make your
+                      dream true!{" "}
+                    </p>
                   </div>
                   <div className="input">
-                    <input type="email" className="footer-email" placeholder="Email address" />
-                    <input type="submit" className="footer-submit" value="Subscribe" />
+                    <input
+                      type="email"
+                      className="footer-email"
+                      placeholder="Email address"
+                      value={email}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
+                    />
+                    <input
+                      type="submit"
+                      className="footer-submit"
+                      value="Subscribe"
+                      onClick={() => {
+                        var re = /\S+@\S+\.\S+/;
+                        if (re.test(email)) {
+                          const serviceId = "service_xm5h4w9";
+                          const templateId = "template_btqhgdn";
+                          const userId = "Wo7KOzV-a-7MhMkG0";
+
+                          const templateParams = {
+                            email: email,
+                          };
+
+                          emailjs
+                            .send(serviceId, templateId, templateParams, userId)
+                            .then((response) => {
+                              console.log(response);
+                              setEmail("");
+                            })
+                            .catch((error) => {
+                              console.log(error);
+                            });
+                        }
+                      }}
+                    />
                   </div>
                 </div>
               </div>
               <div className="left">
                 <div className="container-left">
                   <div className="text-row">
-                    <ul className="list-text1">Map
-                      <li className="nav-page"><a href="#home-section">Home</a></li>
-                      <li className="nav-page"><a href="#">Portofolio</a></li>
-                      <li className="nav-page"><a href="#team-section">Team</a></li>
-                      <li className="nav-page"><a href="#">Contact us</a></li>
+                    <ul className="list-text1">
+                      Map
+                      <li className="nav-page">
+                        <a href="#home-section">Home</a>
+                      </li>
+                      <li className="nav-page">
+                        <a href="#">Portofolio</a>
+                      </li>
+                      <li className="nav-page">
+                        <a href="#team-section">Team</a>
+                      </li>
+                      <li className="nav-page">
+                        <a href="#">Contact us</a>
+                      </li>
                     </ul>
-
 
                     {/*<ul className="list-text2">Bananito
            <li>è carino</li>
@@ -237,11 +342,14 @@ const Home = () => {
               <div className="right-text">
                 <div className="privacy-text">
                   <ul>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms of Use</a></li>
+                    <li>
+                      <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="">Terms of Use</a>
+                    </li>
                   </ul>
                 </div>
-
               </div>
             </div>
           </div>
