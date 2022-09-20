@@ -362,7 +362,7 @@ hr {
 
 
                 svg {
-                    font-size: 2.5rem;
+                    font-size: 1.5rem;
 
                 }
 
@@ -377,7 +377,6 @@ hr {
                 flex-direction: row;
 
                 .right {
-                    width: 50%;
                     padding-right: 15px;
                     border-right-style: solid;
                     border-right-color: #189cbd;
@@ -390,11 +389,11 @@ hr {
                             h2 {
                                 color: #189cbd;
                                 font-size: 3rem;
-                                margin: 2rem 0 2rem 0;
+                                margin: 0rem 0 2rem 0;
                             }
 
                             p {
-                                font-size: 20px;
+                                font-size: 1.2rem;
                                 margin-block-start: 0;
                                 color: white;
                             }
@@ -406,7 +405,6 @@ hr {
                     width: 50%;
                     padding-left: 15px;
                     padding-right: 15px;
-                    border-left-style: solid;
                     border-left-color: #189cbd;
                     border-left-width: 1.5px;
 
@@ -433,14 +431,13 @@ hr {
 
                             display: flex;
                             justify-content: space-between;
-                            margin: 1rem 5rem 3rem 5rem;
+                            margin: 0rem 5rem 0rem 5rem;
 
                             ul {
-                                font-size: 32px;
+                                font-size: 2rem;
                                 margin-block-start: 0em;
                                 margin-block-end: 0em;
                                 padding-inline-start: 0px;
-                                margin-top: 1rem;
                                 color: #189cbd;
                                 font-weight: 650;
 
@@ -449,13 +446,19 @@ hr {
                             li {
                                 list-style: none;
                                 font-size: 20px;
-                                padding: 0.2rem;
                                 margin-top: 1rem;
+                                padding: 0.1rem;
                                 margin-bottom: 1rem;
                                 color: #000000;
                                 font-weight: 400;
+                                text-decoration-color: #189cbd;
 
 
+                            }
+                            li:hover {
+                                text-decoration-line: underline;
+                                text-decoration-color: #189cbd;
+                                text-decoration-style: solid;
                             }
                         }
 
@@ -470,6 +473,7 @@ hr {
             display: flex;
             flex-direction: row;
             align-items: center;
+            margin-top: 2rem;
 
 
             svg {
@@ -570,6 +574,7 @@ hr {
                         a:hover {
                             color: #189cbd;
                             transition: ease 0.5s
+
                         }
                     }
                 }
