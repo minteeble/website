@@ -148,7 +148,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="container">
+          <div className="container" data-aos="fade-up">
             <div className="team-grid">
               {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
               <div className="cropper">
