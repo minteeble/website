@@ -113,7 +113,7 @@ const Home = () => {
           <p> We are ordinary people who, like you, want to achieve one goal: to make your project according to your wishes</p>
         </div>
         <div className="row-grid">
-          <div className="container">
+          <div className="container" data-aos="fade-up">
             <div className="team-grid">
               {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
               <div className="cropper">
@@ -130,7 +130,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="container">
+          <div className="container" data-aos="fade-up">
             <div className="team-grid">
               {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
               <div className="cropper">
@@ -176,11 +176,11 @@ const Home = () => {
           <div className="footer-top">
             <div className="icon-row">
               <ul className="icons">
-                <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faGithub} /></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faYoutube} /></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faCartShopping} /></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faTwitter} /></a></li>
+                <li><a data-aos="fade-up" href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
+                <li><a data-aos="fade-up" href=""><FontAwesomeIcon icon={faGithub} /></a></li>
+                <li><a data-aos="fade-up" href=""><FontAwesomeIcon icon={faYoutube} /></a></li>
+                <li><a  data-aos="fade-up"href=""><FontAwesomeIcon icon={faCartShopping} /></a></li>
+                <li><a  data-aos="fade-up"href=""><FontAwesomeIcon icon={faTwitter} /></a></li>
               </ul>
             </div>
           </div>
@@ -195,7 +195,7 @@ const Home = () => {
                   </div>
                   <div className="input">
                     <input type="email" className="footer-email" placeholder="Email address" />
-                    <input type="submit" className="footer-submit" value="Subscribe" />
+                    <input type="submit" className="footer-submit" value="Confirm" />
                   </div>
                 </div>
               </div>
