@@ -157,10 +157,13 @@ const Home = () => {
                 </span> */}
               </div>
               <div className="socials">
-                <a href="">
+                {/* <a href="">
                   <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href="">
+                </a> */}
+                <a
+                  href="https://www.linkedin.com/in/samuele-girgenti"
+                  target="_blank"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </div>
@@ -178,10 +181,13 @@ const Home = () => {
                 </span> */}
               </div>
               <div className="socials">
-                <a href="">
+                {/* <a href="">
                   <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href="">
+                </a> */}
+                <a
+                  href="https://www.linkedin.com/in/mario-alessandro-privitera/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </div>
