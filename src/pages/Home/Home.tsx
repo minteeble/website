@@ -89,7 +89,7 @@ const Home = () => {
 
       {/* First Section */}
 
-      <div className="portfolio-section">
+      {/* <div className="portfolio-section">
         <div className="card">
           <motion.div className="image">
             {" "}
@@ -130,7 +130,7 @@ const Home = () => {
             )}
           </motion.div>
         </div>
-      </div>
+      </div> */}
 
       <div className="third-section" id="team-section">
         <div className="section-heading">
@@ -251,7 +251,7 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className="footer-main">
+          <div className="footer-main" id="contact">
             <div className="footer-main-row">
               <div className="right">
                 <div className="container-right">
@@ -310,14 +310,14 @@ const Home = () => {
                       <li className="nav-page">
                         <a href="#home-section">Home</a>
                       </li>
-                      <li className="nav-page">
-                        <a href="#">Portofolio</a>
-                      </li>
+                      {/* <li className="nav-page">
+                        <a href="#">Portfolio</a>
+                      </li> */}
                       <li className="nav-page">
                         <a href="#team-section">Team</a>
                       </li>
                       <li className="nav-page">
-                        <a href="#">Contact us</a>
+                        <a href="#contact">Contact us</a>
                       </li>
                     </ul>
 
