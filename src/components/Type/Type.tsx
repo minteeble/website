@@ -17,6 +17,7 @@ const Type = () => {
         wrapper="div"
         cursor={true}
         repeat={Infinity}
+        className="type"
         style={{ color: "#53C2DE", textTransform: "uppercase", fontSize: "4rem"}}
       />
     );

@@ -141,6 +141,25 @@ hr {
     }
 }
 
+@media screen and (max-width: 1350px) {
+
+.first-section{
+
+    font-size: 3.5rem;
+    .left{
+        width: 40rem;
+
+        .type{
+            font-size: 3rem!important;
+        }
+
+        .sub-title{
+            font-size: 1.3rem;
+        }
+    }
+}
+  }
+
 .banner-social {
     display: flex;
     flex-direction: row;
@@ -163,7 +182,7 @@ hr {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 25%;
+        width: 50%;
         list-style: none;
         align-items: center;
 
@@ -349,7 +368,7 @@ hr {
 
                 a {
                     text-decoration: none;
-                    font-size: 20px;
+                    font-size: 1rem;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 400;
                     color: #FFFFFF;
@@ -362,7 +381,7 @@ hr {
 
 
                 svg {
-                    font-size: 1.5rem;
+                    font-size: 1rem;
 
                 }
 
