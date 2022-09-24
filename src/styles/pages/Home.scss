@@ -51,7 +51,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 13rem 5rem 4rem 5rem;
+    margin: 10rem 4rem 5rem 4rem;
     justify-content: center;
     min-height: 30rem;
 
@@ -115,7 +115,6 @@ hr {
 
         img {
             width: 23rem;
-            margin-left: 5rem;
 
         }
     }
@@ -143,22 +142,217 @@ hr {
 
 @media screen and (max-width: 1350px) {
 
-.first-section{
+    .first-section {
 
-    font-size: 3.5rem;
-    .left{
-        width: 40rem;
+        font-size: 3rem;
 
-        .type{
-            font-size: 3rem!important;
+        .left {
+            width: 60%;
+
+            .type {
+                font-size: 3rem !important;
+            }
+
+            .sub-title {
+                font-size: 1.1rem;
+            }
         }
 
-        .sub-title{
-            font-size: 1.3rem;
+        .right {
+
+            img {
+                width: 19rem;
+            }
         }
     }
 }
-  }
+
+@media screen and (max-width: 1110px) {
+
+    .first-section {
+
+        font-size: 2.5rem;
+
+        .left {
+            width: 60%;
+
+            .type {
+                font-size: 2.5rem !important;
+            }
+
+            .sub-title {
+                font-size: 0.9rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1110px) {
+
+    .first-section {
+
+        font-size: 2.5rem;
+
+        .left {
+            width: 60%;
+
+            .type {
+                font-size: 2.5rem !important;
+            }
+
+            .sub-title {
+                font-size: 0.9rem;
+            }
+        }
+
+        .right {}
+
+        #button {
+            margin-top: 1rem;
+            width: 150px;
+            height: 50px;
+            font-size: 1rem;
+            padding: 10px 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1110px) {
+
+    .first-section {
+
+        font-size: 2.5rem;
+
+        .left {
+            width: 60%;
+
+            .type {
+                font-size: 2.5rem !important;
+            }
+
+            .sub-title {
+                font-size: 0.9rem;
+            }
+        }
+
+        .right {}
+
+        #button {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .first-section {
+
+        font-size: 2rem;
+
+        .left {
+            width: 60%;
+
+            .type {
+                font-size: 2rem !important;
+            }
+
+            .sub-title {
+                font-size: 0.7rem;
+            }
+        }
+
+        .right {
+
+            img {
+                width: 15rem;
+            }
+
+        }
+
+        #button {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .first-section {
+
+        font-size: 2rem;
+
+        .left {
+            width: 100%;
+
+            .type {
+                font-size: 2rem !important;
+            }
+
+            .sub-title {
+                font-size: 0.7rem;
+            }
+        }
+
+        .right {
+
+            img {
+                width: 15rem;
+            }
+
+        }
+
+        #button {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .first-section {
+
+        margin: 6rem 0rem 0rem 0rem;
+
+        font-size: 2rem;
+
+        .left {
+            width: 100%;
+
+            .title {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .type {
+                font-size: 1.7rem !important;
+                text-align: center;
+            }
+
+            .sub-title {
+                font-size: 0.7rem;
+                text-align: center;
+                max-width: 100%;
+            }
+
+
+        }
+
+        .right {
+
+            img {
+                width: 15rem;
+            }
+
+        }
+
+        #button {
+            margin-top: 1rem;
+        }
+    }
+}
+
+
 
 .banner-social {
     display: flex;
@@ -254,9 +448,7 @@ hr {
         flex-wrap: wrap;
 
         .container {
-            padding-right: 80px;
-            padding-left: 80px;
-            padding-top: 50px;
+            margin: 3rem;
             width: 230px;
             height: 330px;
         }
@@ -394,6 +586,7 @@ hr {
             .footer-main-row {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
 
                 .right {
                     padding-right: 15px;
@@ -474,6 +667,7 @@ hr {
 
 
                             }
+
                             li:hover {
                                 text-decoration-line: underline;
                                 text-decoration-color: #189cbd;
@@ -593,7 +787,6 @@ hr {
                         a:hover {
                             color: #189cbd;
                             transition: ease 0.5s
-
                         }
                     }
                 }
