@@ -36,8 +36,8 @@ const Home = () => {
   });
 
   return (
-    <div className="home-page">
-      {/* <Navbar /> */}
+    <div className="home-page" id="home-page">
+      <Navbar />
 
       {/* First Section */}
 

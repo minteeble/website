@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+*, :after, :before {
+    box-sizing: border-box;
+}
 
 // @import "/node_modules/@minteeble/ui-components/src/styles/main.scss";
-@import "pages/Home.scss";
 @import "components/navbar.scss";
+@import "pages/Home.scss";
