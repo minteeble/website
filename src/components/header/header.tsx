@@ -45,14 +45,16 @@ const header = () => {
             <p className="f-size" >Build your own awesome Web3
             applications and start exploring this new world. What are you
             waiting for?</p>
-            <nav>
-              <a className="border-radius a-blue a-decoration">
+            <div className="nav">
+            <button className=" b-decoration a-decoration b-backgr-color"><a >
                 Know more  <FontAwesomeIcon icon={faArrowRight} />
-              </a>
-              <a className="border-radius a-white a-decoration"> 
+              </a></button>
+              <button className=" b-decoration a-decoration a-backgr-color"><a > 
                 Know more  <FontAwesomeIcon icon={faArrowRight} />
-              </a>
-            </nav>
+              </a></button>
+            </div>
+              
+            
           </div>
           <div className="column-r">
             <div className="iphone14pro">
