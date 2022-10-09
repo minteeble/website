@@ -5,13 +5,21 @@ html {
 
 .top {
     a {
+        font-weight: bold;
         color: #FFFFFF;
+        opacity: 0.8;
         text-decoration-line: none;
+        transition: all 0.5s ease;
+        text-decoration-color: #58d6c1;
+        
     }
 
     a:hover {
+ scale: calc(1.1);
+        transition: all .5s ease;
+        opacity: 1;
         text-decoration-line: underline;
-        text-decoration-color: #189cbd;
+        text-decoration-color: #58d6c1;
         text-decoration-style: solid;
         text-decoration-thickness: 3px;
     }
@@ -48,10 +56,12 @@ hr {
 }
 
 .first-section {
+    padding-top:90px;
+    padding-bottom:90px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 10rem 4rem 5rem 4rem;
+   margin: 0 4rem 0 4rem;
     justify-content: center;
     min-height: 30rem;
 
@@ -445,6 +455,8 @@ hr {
     .row-grid {
         display: flex;
         justify-content: center;
+        position: relative;
+        z-index: -1;
         flex-wrap: wrap;
 
         .container {

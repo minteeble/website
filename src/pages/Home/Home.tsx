@@ -25,6 +25,8 @@ import {
   faMailBulk,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
+import Header from "../../components/header";
+import Features from "../../components/features";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -38,10 +40,11 @@ const Home = () => {
   return (
     <div className="home-page" id="home-page">
       <Navbar />
-
+      <Header />
+      <Features />
       {/* First Section */}
 
-      <div className="first-section">
+{/*<div className="first-section">
         <div className="left">
           <p className="title" data-aos="fade-up">
             make your dreams come true{" "}
@@ -58,34 +61,13 @@ const Home = () => {
         <div className="right">
           <img src="/build/images/second.svg" alt="" />
         </div>
-        {/* <ul className="shape">
-          <li className="bubble" id="home-section">
-            <img
-              src="https://new.axilthemes.com/demo/react/abstrak/images/others/bubble-39.png"
-              alt=""
-            />
-          </li>
-        </ul> */}
+        
         <ScrollToTop smooth />
-        {/* <div className="banner-social">
-          <div className="border-line"></div>
-          <ul className="social-line">
-            <li>
-              <FontAwesomeIcon icon={faInstagram} />
-              <a href="">Instagram</a>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faTwitter} />
-              <a href="">Twitter</a>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCartShopping} />
-
-              <a href="">Fiverr</a>
-            </li>
-          </ul>
-        </div> */}
+        
+        
       </div>
+*/}
+      
 
       {/* First Section */}
 
