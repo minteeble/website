@@ -27,6 +27,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Header from "../../components/header";
 import Features from "../../components/features";
+import Asection from "../../components/asection";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -42,6 +43,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <Features />
+      <Asection />
       {/* First Section */}
 
 {/*<div className="first-section">

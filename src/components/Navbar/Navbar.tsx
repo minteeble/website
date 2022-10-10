@@ -14,7 +14,7 @@ const Navbar = () => {
   const [side, setSide] = useState(false);
 
   function setFixed() {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 110) {
       setFix(true);
     } else {
       setFix(false);
@@ -48,7 +48,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faClose} />
             </div>
             
-              <ul className="nav-page">
+              <ul className="nav-page dahsboard">
                 <li className="nav-item">
                   {" "}
                   <a className="nav-text" href="#home-section">
