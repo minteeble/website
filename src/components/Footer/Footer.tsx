@@ -32,7 +32,18 @@ const Footer = () => {
             <div className="top">Follow us</div>
             <div className="text ">
               <ul className="decoration">
-                <li><a href="https://www.instagram.com/minteeble/"><FontAwesomeIcon className="socials" icon={faInstagram} />Instagram</a></li>
+                <li><a href="https://www.instagram.com/minteeble/"><FontAwesomeIcon className="socials" icon={faInstagram} />Instagram</a>
+                  {/*<div id="container">
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"><FontAwesomeIcon className="socials" icon={faInstagram} /></span>
+                    </span>
+                    <span className="button-text">Instagram</span>
+                  </button>
+  </div>*/}</li>
+
+
+
                 <li><a href="https://twitter.com/minteeble"><FontAwesomeIcon className="socials" icon={faTwitter} />Twitter</a></li>
                 <li><a href=""><FontAwesomeIcon className="socials" icon={faTiktok} />TikTok</a></li>
                 <li><a href=""><FontAwesomeIcon className="socials" icon={faYoutube} />Youtube</a></li>
@@ -52,9 +63,9 @@ const Footer = () => {
         </div>
         <hr className="line" />
         <div className="row-small">
-          <div className="row-ft-l">© Copyright 2022 <a href="">Minteeble</a>. All rights reserved.</div>
+          <div className="row-ft-l">© Copyright 2022 <a href=""> Minteeble </a>. All rights reserved.</div>
           <div className="right">
-            <div className="privacy"><a href="" className="white">Privacy Police</a></div>
+            <div className="privacy"><a href="" className="white">Privacy Policy</a></div>
             <div><a href="" className="white">Terms & Conditions</a></div>
 
           </div>

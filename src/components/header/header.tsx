@@ -35,6 +35,26 @@ const header = () => {
         <div className="d-long-shape common-a common-b "></div>
         <div className="d-short-shape common-a common-b"></div>
 
+        <div className=" common-b animation">
+          <div className="icon-animated">
+            <img src="/build/images/minty.svg" />
+          </div>
+        </div>
+        <div className=" common-b a-animation">
+          <div className="a-icon-animated">
+
+          </div>
+        </div>
+        <div className=" common-b b-animation">
+          <div className="b-icon-animated">
+
+          </div>
+        </div>
+        <div className=" common-b c-animation">
+          <div className="c-icon-animated">
+
+          </div>
+        </div>
       </div>
       <div className="container" id="home-section">
         <div className="row">
@@ -65,12 +85,10 @@ const header = () => {
               <div className="screen">
                 <div className="notch"></div>
 
-                <img src="build/images/zb.webp" alt="screen-exe" />
-                <img src="build/images/benjis.webp" alt="screen-exe" />
+                <img className="zb" src="build/images/zb.webp" alt="screen-exe" />
+                <img className="benjis" src="build/images/benjis.webp" alt="screen-exe" />
                 <img src="build/images/green.webp" alt="screen-exe" />
                 <img src="build/images/crash.webp" alt="screen-exe" />
-
-
 
               </div>
             </div>

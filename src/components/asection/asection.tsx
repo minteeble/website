@@ -11,7 +11,7 @@ const asection = () => {
   return (
     <div className="asection">
       <div className="shapes">
-        <div className="ring-l common-b"></div>
+        {/* <div className="ring-l common-b"></div> */}
         <div className="b-pattern-shape common-b "></div>
         <div className="circle common-b"></div>
         <div className="b-circle common-b"></div>
