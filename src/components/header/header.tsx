@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faBars, faHandsBubbles, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
+import ReactPlayer from 'react-player'
+
 // @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -62,9 +64,14 @@ const header = () => {
 
               <div className="screen">
                 <div className="notch"></div>
-                <img src="build/images/benjis.jpg" alt="screen-exe" />
-                <img src="build/images/geckos.jpg" alt="screen-exe" />
-                <img src="build/images/screen-exe.jpg" alt="screen-exe" />
+
+                <img src="build/images/zb.webp" alt="screen-exe" />
+                <img src="build/images/benjis.webp" alt="screen-exe" />
+                <img src="build/images/green.webp" alt="screen-exe" />
+                <img src="build/images/crash.webp" alt="screen-exe" />
+
+
+
               </div>
             </div>
           </div>
