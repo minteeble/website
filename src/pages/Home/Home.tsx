@@ -28,6 +28,8 @@ import {
 import Header from "../../components/header";
 import Features from "../../components/features";
 import Asection from "../../components/asection";
+import Staytunned from "../../components/staytunned";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -44,9 +46,10 @@ const Home = () => {
       <Header />
       <Features />
       <Asection />
+
       {/* First Section */}
 
-{/*<div className="first-section">
+      {/*<div className="first-section">
         <div className="left">
           <p className="title" data-aos="fade-up">
             make your dreams come true{" "}
@@ -69,7 +72,7 @@ const Home = () => {
         
       </div>
 */}
-      
+
 
       {/* First Section */}
 
@@ -201,6 +204,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Staytunned />
+      <Footer />
 
     </div>
   );

@@ -112,6 +112,7 @@ $circle:linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
                 flex-direction: column;
                 padding: 15px;
                 z-index: -1;
+                
 
                 .image-as {
                     background-color: white;
@@ -141,7 +142,7 @@ $circle:linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
                     letter-spacing: .05rem;
                     font-size: 42px;
                     font-weight: 600;
-                    color: rgba(255, 255, 255, 0.74);
+                    color: white;
 
                     &::after {
                         align-self: left;

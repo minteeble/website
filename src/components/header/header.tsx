@@ -62,8 +62,8 @@ const header = () => {
 
               <div className="screen">
                 <div className="notch"></div>
-                <img src="build/images/screen-exe.jpg" alt="screen-exe" />
-                <img src="build/images/screen-exe.jpg" alt="screen-exe" />
+                <img src="build/images/benjis.jpg" alt="screen-exe" />
+                <img src="build/images/geckos.jpg" alt="screen-exe" />
                 <img src="build/images/screen-exe.jpg" alt="screen-exe" />
               </div>
             </div>
