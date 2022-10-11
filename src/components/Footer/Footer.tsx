@@ -32,15 +32,15 @@ const Footer = () => {
             <div className="top">Follow us</div>
             <div className="text ">
               <ul className="decoration">
-                <li><a href="https://www.instagram.com/minteeble/"><FontAwesomeIcon className="socials" icon={faInstagram} />Instagram</a>
-                  {/*<div id="container">
+                <li>
+                  <div id="container">
                   <button className="learn-more">
                     <span className="circle" aria-hidden="true">
-                      <span className="icon arrow"><FontAwesomeIcon className="socials" icon={faInstagram} /></span>
+                      <FontAwesomeIcon className="socials" icon={faInstagram} />
                     </span>
                     <span className="button-text">Instagram</span>
                   </button>
-  </div>*/}</li>
+  </div></li>
 
 
 

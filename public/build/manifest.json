@@ -16,8 +16,7 @@
   "build/images/user1.jpg": "http://localhost:8080/build/images/user1.jpg",
   "build/images/user2.jpg": "http://localhost:8080/build/images/user2.jpg",
   "build/images/Logosmall.png": "http://localhost:8080/build/images/Logosmall.png",
+  "build/images/minty.svg": "http://localhost:8080/build/images/minty.svg",
   "build/images/favicon.ico": "http://localhost:8080/build/images/favicon.ico",
-  "build/images/Polygon.svg": "http://localhost:8080/build/images/Polygon.svg",
-  "build/images/minty.png": "http://localhost:8080/build/images/minty.png",
-  "build/images/minty.svg": "http://localhost:8080/build/images/minty.svg"
+  "build/images/Polygon.svg": "http://localhost:8080/build/images/Polygon.svg"
 }

@@ -8,6 +8,7 @@ import ReactPlayer from 'react-player'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Type from "../Type";
+import { faEthereum } from "@fortawesome/free-brands-svg-icons";
 
 
 const header = () => {
@@ -42,7 +43,7 @@ const header = () => {
         </div>
         <div className=" common-b a-animation">
           <div className="a-icon-animated">
-
+          <FontAwesomeIcon className="eth" icon={faEthereum} />
           </div>
         </div>
         <div className=" common-b b-animation">
