@@ -34,13 +34,13 @@ const Footer = () => {
               <ul className="decoration">
                 <li>
                   <div id="container">
-                  <button className="learn-more">
-                    <span className="circle" aria-hidden="true">
-                      <FontAwesomeIcon className="socials" icon={faInstagram} />
-                    </span>
-                    <span className="button-text">Instagram</span>
-                  </button>
-  </div></li>
+                    <button className="learn-more">
+                      <span className="circle" aria-hidden="true">
+                        <FontAwesomeIcon className="socials" icon={faInstagram} />
+                      </span>
+                      <span className="button-text">Instagram</span>
+                    </button>
+                  </div></li>
 
 
 
