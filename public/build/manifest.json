@@ -18,5 +18,12 @@
   "build/images/Logosmall.png": "http://localhost:8080/build/images/Logosmall.png",
   "build/images/minty.svg": "http://localhost:8080/build/images/minty.svg",
   "build/images/favicon.ico": "http://localhost:8080/build/images/favicon.ico",
-  "build/images/Polygon.svg": "http://localhost:8080/build/images/Polygon.svg"
+  "build/images/Polygon.svg": "http://localhost:8080/build/images/Polygon.svg",
+  "build/images/portfolio/website3.png": "http://localhost:8080/build/images/portfolio/website3.png",
+  "build/images/portfolio/website1.png": "http://localhost:8080/build/images/portfolio/website1.png",
+  "build/images/portfolio/dapp1.png": "http://localhost:8080/build/images/portfolio/dapp1.png",
+  "build/images/portfolio/dapp2.png": "http://localhost:8080/build/images/portfolio/dapp2.png",
+  "build/images/portfolio/dapp3.png": "http://localhost:8080/build/images/portfolio/dapp3.png",
+  "build/images/portfolio/website2.png": "http://localhost:8080/build/images/portfolio/website2.png",
+  "build/images/portfolio/game1.png": "http://localhost:8080/build/images/portfolio/game1.png"
 }

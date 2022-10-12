@@ -51,11 +51,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="colum padding">
-            <div className="top">Connect</div>
+            <div className="top">Contacts</div>
             <div className="text">
               <ul className="decoration">
-                <li>+39 MONSTERGRATIS 345</li>
-                <li><a href=""><span className="color">email@gmail.com</span></a></li>
+                {/* <li>+39 xxx </li>*/}
+                <li><a href=""><span className="color">minteeble@gmail.com</span></a></li>
 
               </ul>
             </div>

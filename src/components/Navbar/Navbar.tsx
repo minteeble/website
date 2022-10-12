@@ -47,36 +47,36 @@ const Navbar = () => {
             <div className="close" onClick={handleClick}>
               <FontAwesomeIcon icon={faClose} />
             </div>
-            
-              <ul className="nav-page dahsboard">
-                <li className="nav-item">
-                  {" "}
-                  <a className="nav-text" href="#home-section">
-                    <FontAwesomeIcon className="icon" icon={faHouseChimney} />
-                    Home
-                  </a>
-                </li>
 
-                <li className="nav-item">
-                  <a className="nav-text" href="#">
-                    <FontAwesomeIcon className="icon" icon={faDiagramProject} />
-                    Portfolio
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-text" href="#team-section">
-                    <FontAwesomeIcon className="icon" icon={faPeopleGroup} />
-                    Team
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-text" href="#contact">
-                    <FontAwesomeIcon className="icon" icon={faMessage} />
-                    Contact us
-                  </a>
-                </li>
-              </ul>
-            
+            <ul className="nav-page dahsboard">
+              <li className="nav-item">
+                {" "}
+                <a className="nav-text" href="#home-section">
+                  <FontAwesomeIcon className="icon" icon={faHouseChimney} />
+                  Home
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-text" href="/Portfolio">
+                  <FontAwesomeIcon className="icon" icon={faDiagramProject} />
+                  Portfolio
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-text" href="#team-section">
+                  <FontAwesomeIcon className="icon" icon={faPeopleGroup} />
+                  Team
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-text" href="#contact">
+                  <FontAwesomeIcon className="icon" icon={faMessage} />
+                  Contact us
+                </a>
+              </li>
+            </ul>
+
           </div>
         </div>
       </nav>

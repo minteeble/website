@@ -182,16 +182,18 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+    transition: all .9s ease;
 
     &.learn-more {
       width: 100%;
       height: auto;
+      transition: all .9s ease;
 
       .circle {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
         position: relative;
         display: block;
-        margin: 0;
+        margin: 0 auto;
         width: 3rem;
         height: 3rem;
         background: LINEAR-GRADIENT(45deg,
@@ -202,6 +204,7 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
             #e1306c,
             #fd1d1d);
         border-radius: 1.625rem;
+        transition: all .9s ease;
 
         .socials-ft {
          /* @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));*/
@@ -215,10 +218,6 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
             margin:0;
           &.socials {
            /*transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);*/
-
-            
-
-            
           }
         }
       }
@@ -243,9 +242,11 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
   }
   
   button:hover{
+    transition: all .9s ease;
 .circle{
   width:100%;
   position: relative;
+  transition: all .9s ease;
   .socials-ft{
     width:0;
     height:0;
@@ -254,10 +255,21 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
   
 }
 .button-text{
+  display: block;
+  
     margin:0;
     display: block;
-    @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+    transition: all .9s ease;
+    @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1)
+    );
   }
+     @keyframes button-text {
+       0% {opacity: 0;}
+       100%{opacity: 1;}
+       }
+  
+       
+     
 
   }
   

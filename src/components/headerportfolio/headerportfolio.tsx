@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faBars, faChevronDown, faDiagramProject, faHandsBubbles, faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faBars, faChevronDown, faHandsBubbles, faHome, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 import ReactPlayer from 'react-player'
 
@@ -9,9 +9,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Type from "../Type";
 import { faEthereum } from "@fortawesome/free-brands-svg-icons";
+import Typeportfolio from "../typeportfolio";
 
 
-const header = () => {
+const headerportfolio = () => {
 
   return (
     <header >
@@ -64,18 +65,18 @@ const header = () => {
               <span className="Highlighter" ><FontAwesomeIcon icon={faLightbulb} />
                 Awesome</span> Landing Page
             </p>
-            <p></p> <h1 className="bold">Minteeble</h1>
-            <p className="Highlighter f-size bold"> <Type /> </p>
+            <p></p> <h1 className="bold">Portfolio</h1>
+            <p className="Highlighter f-size bold"> <Typeportfolio /> </p>
             <p className="f-size description" >Build your own awesome Web3
               applications and start exploring this new world. What are you
               waiting for?</p>
             <div className="nav">
-              <button className="b-decoration a-decoration b-backgr-color"><a href="#features">
-                Know more  <FontAwesomeIcon icon={faChevronDown} />
+              <button className="b-decoration a-decoration  b-backgr-color"><a href="Portfolio#website">
+                See more  <FontAwesomeIcon icon={faChevronDown} />
               </a></button>
-              <a href="Portfolio#website" ><button className="b-decoration a-decoration a-backgr-color">
-                Our Portfolio  <FontAwesomeIcon icon={faDiagramProject} />
-              </button></a>
+              <button className="b-decoration a-decoration  a-backgr-color"><a href="/#" >
+                Back to Home  <FontAwesomeIcon icon={faHome} />
+              </a></button>
             </div>
 
 
@@ -101,4 +102,4 @@ const header = () => {
 }
 
 
-export default header;
+export default headerportfolio;
