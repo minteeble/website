@@ -71,12 +71,12 @@ const headerportfolio = () => {
               applications and start exploring this new world. What are you
               waiting for?</p>
             <div className="nav">
-              <button className="b-decoration a-decoration  b-backgr-color"><a href="Portfolio#website">
+              <form action="Portfolio#website"><button className="b-decoration a-decoration  b-backgr-color">
                 See more  <FontAwesomeIcon icon={faChevronDown} />
-              </a></button>
-              <button className="b-decoration a-decoration  a-backgr-color"><a href="/#" >
+              </button></form>
+              <form action="/#"><button className="b-decoration a-decoration  a-backgr-color">
                 Back to Home  <FontAwesomeIcon icon={faHome} />
-              </a></button>
+              </button></form>
             </div>
 
 

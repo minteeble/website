@@ -10,11 +10,18 @@ import Popup from "../Popup";
 
 const featuresportfolio = () => {
   const [PopupOpen, setPopupOpen] = useState<boolean>(false);
+  const [PopupOpen1, setPopupOpen1] = useState<boolean>(false);
+  const [PopupOpen2, setPopupOpen2] = useState<boolean>(false);
 
   return (
     <section className="section-featuresportfolio" id="features">
-      <Popup open={PopupOpen} setOpen={setPopupOpen} title={"Profile"} logo={false}>
+      <Popup open={PopupOpen} setOpen={setPopupOpen} title={"Profile"} logo={false} image={<><img src="build/images/portfolio/website1.png" alt="" /></>} >
       </Popup>
+      <Popup open={PopupOpen1} setOpen={setPopupOpen1} title={"Profile"} logo={false} image={<><img src="build/images/portfolio/website2.png" alt="" /></>} >
+      </Popup>
+      <Popup open={PopupOpen2} setOpen={setPopupOpen2} title={"Profile"} logo={false} image={<><img src="build/images/portfolio/website3.png" alt="" /></>} >
+      </Popup>
+
       <div className="container">
         <div className="heading">
           <h2 id="website" className="heading-text">
@@ -37,12 +44,16 @@ const featuresportfolio = () => {
 
           </div>
           <div className="column">
-            <figure> <img src="build/images/portfolio/website2.png" alt="" />
+            <figure onClick={() => {
+              setPopupOpen1((v) => !v);
+            }}> <img src="build/images/portfolio/website2.png" alt="" />
               <figcaption>Chirpy Chicks</figcaption>
             </figure>
           </div>
           <div className="column">
-            <figure> <img src="build/images/portfolio/website3.png" alt="" />
+            <figure onClick={() => {
+              setPopupOpen2((v) => !v);
+            }}> <img src="build/images/portfolio/website3.png" alt="" />
               <figcaption>Prettiest woman</figcaption>
             </figure>
           </div>

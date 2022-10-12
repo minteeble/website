@@ -70,12 +70,12 @@ const header = () => {
               applications and start exploring this new world. What are you
               waiting for?</p>
             <div className="nav">
-              <button className="b-decoration a-decoration b-backgr-color"><a href="#features">
+              <form className="margin-right" action="#features"><button className="b-decoration a-decoration b-backgr-color">
                 Know more  <FontAwesomeIcon icon={faChevronDown} />
-              </a></button>
-              <a href="Portfolio#website" ><button className="b-decoration a-decoration a-backgr-color">
+              </button></form>
+              <form action="Portfolio#website" ><button className="b-decoration a-decoration a-backgr-color">
                 Our Portfolio  <FontAwesomeIcon icon={faDiagramProject} />
-              </button></a>
+              </button></form>
             </div>
 
 

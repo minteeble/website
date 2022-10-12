@@ -32,29 +32,18 @@ const Footer = () => {
             <div className="top">Follow us</div>
             <div className="text ">
               <ul className="decoration">
-                <li>
-                  <div id="container">
-                    <button className="learn-more">
-                      <span className="circle" aria-hidden="true">
-                        <FontAwesomeIcon className="socials-ft" icon={faInstagram} />
-                      </span>
-                      <span className="button-text">Instagram</span>
-                    </button>
-                  </div></li>
-
-
-
-                <li><a href="https://twitter.com/minteeble"><FontAwesomeIcon className="socials" icon={faTwitter} />Twitter</a></li>
-                <li><a href=""><FontAwesomeIcon className="socials" icon={faTiktok} />TikTok</a></li>
-                <li><a href=""><FontAwesomeIcon className="socials" icon={faYoutube} />Youtube</a></li>
+                <li><a href=""><span className="span hover-i"><FontAwesomeIcon className="socials" icon={faInstagram} />Instagram</span></a></li>
+                <li><a href="https://twitter.com/minteeble"><span className=" span hover-t"><FontAwesomeIcon className="socials" icon={faTwitter} />Twitter</span></a></li>
+                <li><a href=""><span className="span hover-tk"><FontAwesomeIcon className="socials" icon={faTiktok} />TikTok</span></a></li>
+                <li><a href=""><span className="span hover-y"><FontAwesomeIcon className="socials" icon={faYoutube} />Youtube</span></a></li>
               </ul>
             </div>
           </div>
           <div className="colum padding">
-            <div className="top">Contacts</div>
+            <div className="top">Connect</div>
             <div className="text">
               <ul className="decoration">
-                {/* <li>+39 xxx </li>*/}
+                <li>+39 ---</li>
                 <li><a href=""><span className="color">minteeble@gmail.com</span></a></li>
 
               </ul>

@@ -12,6 +12,7 @@ export interface PopupProps {
   setOpen: any;
   children: any;
   title: String;
+  image: any;
   logo: boolean;
 }
 
@@ -49,7 +50,7 @@ const Popup = (props: PopupProps) => {
         {/* <FontAwesomeIcon  icon={faXmark}  className="close-popup"  onClick={() => {    console.log("Clicked");    props.setOpen(false);  }}/> */}
 
         <div className="main-content">
-          <img src="build/images/portfolio/website1.png" alt="" />
+          {props.image}
 
           <div className="divider-custom"><div className="line-custom m-lf"></div><div className="minte-custom"><img src="/build/images/logo.png" alt="" /> </div><div className="line-custom m-rg"></div></div>
         </div>
