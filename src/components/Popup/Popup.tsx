@@ -14,6 +14,7 @@ export interface PopupProps {
   title: String;
   image: any;
   logo: boolean;
+  description: any;
 }
 
 const Popup = (props: PopupProps) => {
@@ -53,6 +54,7 @@ const Popup = (props: PopupProps) => {
           {props.image}
 
           <div className="divider-custom"><div className="line-custom m-lf"></div><div className="minte-custom"><img src="/build/images/logo.png" alt="" /> </div><div className="line-custom m-rg"></div></div>
+          <div className="description">{props.description}</div>
         </div>
 
       </div>

@@ -15,11 +15,23 @@ const featuresportfolio = () => {
 
   return (
     <section className="section-featuresportfolio" id="features">
-      <Popup open={PopupOpen} setOpen={setPopupOpen} title={"Profile"} logo={false} image={<><img src="build/images/portfolio/website1.png" alt="" /></>} >
+      <Popup open={PopupOpen} setOpen={setPopupOpen} title={"Profile"} logo={false}
+        image={<><img src="build/images/portfolio/website1.png" alt="" /></>}
+        description={
+          <>
+          <p>A collection of 3,500 unique, Ethereum NFTs called Fighterpunks™ by the Metaverse Fight League™. A cultural movement to bring live combat sports to the next generation of fans; video-game visuals, more relatable content and fan ownership.</p>
+          <p>Each Fighterpunk is computer generated with a truly unique combination of traits and a randomly assigned set of attributes - which give the owner commercial rights for Metaverse Fight League event passes, plus image licensing rights.</p>
+          <button >Go To Website</button>
+          
+          </>}
+      >
       </Popup>
-      <Popup open={PopupOpen1} setOpen={setPopupOpen1} title={"Profile"} logo={false} image={<><img src="build/images/portfolio/website2.png" alt="" /></>} >
+      <Popup open={PopupOpen1} setOpen={setPopupOpen1} title={"Profile"} logo={false}
+        image={<><img src="build/images/portfolio/website2.png" alt="" /></>}
+        description={<></>}>
       </Popup>
-      <Popup open={PopupOpen2} setOpen={setPopupOpen2} title={"Profile"} logo={false} image={<><img src="build/images/portfolio/website3.png" alt="" /></>} >
+      <Popup open={PopupOpen2} setOpen={setPopupOpen2} title={"Profile"} logo={false} image={<><img src="build/images/portfolio/website3.png" alt="" /></>}
+        description={<></>}>
       </Popup>
 
       <div className="container">

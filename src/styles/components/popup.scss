@@ -103,9 +103,27 @@
       background-color: #1e2024;
       border-radius: 26px;
       animation: zoom 0.3s ease forwards;
+
       
     img{
       width: 100%;
+    }
+
+
+    .description{
+      padding: 0.2rem  2rem;
+      display: flex;
+      flex-direction: column;
+
+      p{
+        text-align: justify;
+        font-size: 1rem;
+      }
+
+      button{
+        margin-top: 1rem;
+        align-self: center;
+      }
     }
 
     .divider-custom {
