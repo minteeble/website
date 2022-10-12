@@ -123,6 +123,37 @@
       button{
         margin-top: 1rem;
         align-self: center;
+        border: none;
+          border-radius: 40px;
+          color: #fff;
+          cursor: pointer;
+          font-family: 'Roboto', sans-serif;
+          font-size: 0.75rem;
+          font-weight: 800;
+          height: 45px;
+          transition: .4s ease;
+          width: 159px;
+          background-color: #189cbd;
+            color: white;
+            border: 1px solid #189cbd;
+            animation: b-backgr 1.5s ease forwards;
+            transform: translateY(3vh);
+            transition: all .3s ease;
+              text-decoration: none;
+              letter-spacing: 1.45px;
+              font-weight: 400;
+              padding: 0.5rem 1.25rem;
+              font-size: .75rem;
+              line-height: 1.5;
+      }
+      button:hover{
+       
+            scale: calc(1.1);
+            font-size: 0.8rem;
+            background-color: #48b4d0e0;
+            box-shadow: 8px 12px 20px -3px rgb(15 125 161 / 56%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+            transition: .5s ease;
+          
       }
     }
 
