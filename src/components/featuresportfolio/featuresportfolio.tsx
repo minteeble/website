@@ -19,19 +19,32 @@ const featuresportfolio = () => {
         image={<><img src="/build/images/portfolio/website1.png" alt="" /></>}
         description={
           <>
-          <p>A collection of 3,500 unique, Ethereum NFTs called Fighterpunks™ by the Metaverse Fight League™. A cultural movement to bring live combat sports to the next generation of fans; video-game visuals, more relatable content and fan ownership.</p>
-          <p>Each Fighterpunk is computer generated with a truly unique combination of traits and a randomly assigned set of attributes - which give the owner commercial rights for Metaverse Fight League event passes, plus image licensing rights.</p>
-          <button >Go To Website</button>
-          
-          </>}
+            <p>A collection of 3,500 unique, Ethereum NFTs called Fighterpunks™ by the Metaverse Fight League™. A cultural movement to bring live combat sports to the next generation of fans; video-game visuals, more relatable content and fan ownership.</p>
+            <p>Each Fighterpunk is computer generated with a truly unique combination of traits and a randomly assigned set of attributes - which give the owner commercial rights for Metaverse Fight League event passes, plus image licensing rights.</p>
+          </>
+        } button="https://fighterpunks.netlify.app/"
       >
       </Popup>
       <Popup open={PopupOpen1} setOpen={setPopupOpen1} title={"Profile"} logo={false}
         image={<><img src="/build/images/portfolio/website2.png" alt="" /></>}
-        description={<></>}>
+        description={<>
+          <p>Flying above the alphabet forest, the Chirpy Chicks park and roost into their warm nest, and carefully tuck in their newest eggs to keep them warm. Every egg is beautifully protected before they hatch, and taught valuable lessons before they journey into the open world. Chirpy uncles and aunties visit these nests and tell their fondest stories, nurturing their curiosities until the eggs fall asleep.</p>
+
+          <p>Slowly breaking outside of their shells, 6,333 Chirpy Chicks emerge into the open world, and embrace the fresh air with excitement. As they broaden their wings and attempt to ﬂy, they bounce on their nest and cushion it. Alas, they try again and again - each time, rising a bit higher above the ground.</p>
+
+          <p>Embracing their quirky traits, and donning colorful fabrics and outﬁts to express themselves, each Chirpy Chick is uniquely distinct and fun in its own way. Exploring a new piece of the forest each morning and sunset, the Chirpy Chicks discover an untold secret kept away beneath the grand tree that centers the forest. If a bird chirps in a forest and no one is around to hear it, does it make a sound?</p>
+
+          <p>Explore an NFT community that charitably supports children through an inspiring community and gameplay aspect that enhances project fun. Join us on Discord and Twitter to take ﬂight today!</p>
+
+        </>}
+        button="https://chirpychicksnft.netlify.app/"
+      >
       </Popup>
       <Popup open={PopupOpen2} setOpen={setPopupOpen2} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/website3.png" alt="" /></>}
-        description={<></>}>
+        description={<></>}
+
+
+        button="https://chirpychicksnft.netlify.app/">
       </Popup>
 
       <div className="container">

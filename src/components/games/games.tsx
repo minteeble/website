@@ -14,7 +14,8 @@ const games = () => {
   return (
     <section className="section-featuresportfolio" id="features">
       <Popup open={PopupOpen6} setOpen={setPopupOpen6} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/game1.png" alt="" /></>}
-         description={<></>} >
+         description={<></>} 
+         button="https://chirpychicksnft.netlify.app/">
       </Popup>
       <div className="container">
         <div className="heading">

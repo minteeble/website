@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="row">
           <div className="a-colum-ft padding">
             <img className="logo-minte" src="/build/images/Logosmall.png" alt="" />
-            <p className="description-minte">i cunnuti di minteeble sono tornati più cunnuti di prima, non so cosa scrivere e devo occupare spazio ciau</p>
+            <p className="description-minte">Build your own awesome Web3 applications and start exploring this new world. What are you waiting for?</p>
           </div>
           <div className="colum padding">
             <div className="top">Company</div>

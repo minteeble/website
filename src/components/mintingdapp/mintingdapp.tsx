@@ -30,16 +30,18 @@ const mintingdapp = () => {
         <Popup open={PopupOpen3} setOpen={setPopupOpen3} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp1.png" alt="" /></>}
           description={
             <>
-
               <p>A collection of 3,500 unique, Ethereum NFTs called Fighterpunks™ by the Metaverse Fight League™. A cultural movement to bring live combat sports to the next generation of fans; video-game visuals, more relatable content and fan ownership.</p>
               <p>Each Fighterpunk is computer generated with a truly unique combination of traits and a randomly assigned set of attributes - which give the owner commercial rights for Metaverse Fight League event passes, plus image licensing rights.</p>
-            </>}>
+            </>}
+          button="https://chirpychicksnft.netlify.app/">
         </Popup>
         <Popup open={PopupOpen4} setOpen={setPopupOpen4} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp2.png" alt="" /></>}
-          description={<></>}>
+          description={<></>}
+          button="https://chirpychicksnft.netlify.app/">
         </Popup>
         <Popup open={PopupOpen5} setOpen={setPopupOpen5} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp3.png" alt="" /></>}
-          description={<></>} >
+          description={<></>}
+          button="https://chirpychicksnft.netlify.app/">
         </Popup>
 
         <div className="heading">
