@@ -13,7 +13,7 @@ const games = () => {
 
   return (
     <section className="section-featuresportfolio" id="features">
-      <Popup open={PopupOpen6} setOpen={setPopupOpen6} title={"Profile"} logo={false} image={<><img src="build/images/portfolio/game1.png" alt="" /></>}
+      <Popup open={PopupOpen6} setOpen={setPopupOpen6} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/game1.png" alt="" /></>}
          description={<></>} >
       </Popup>
       <div className="container">
@@ -32,18 +32,18 @@ const games = () => {
           <div className="column game">
             <figure onClick={() => {
               setPopupOpen6((v) => !v);
-            }}> <img src="build/images/portfolio/game1.png" alt="" />
+            }}> <img src="/build/images/portfolio/game1.png" alt="" />
               <figcaption>The Crypto Crash</figcaption>
             </figure>
 
           </div>
           {/*<div className="column">
-            <figure> <img src="build/images/portfolio/website2.png" alt="" />
+            <figure> <img src="/build/images/portfolio/website2.png" alt="" />
               <figcaption>Chirpy Chicks</figcaption>
             </figure>
           </div>
           <div className="column">
-            <figure> <img src="build/images/portfolio/website3.png" alt="" />
+            <figure> <img src="/build/images/portfolio/website3.png" alt="" />
               <figcaption>Prettiest woman</figcaption>
             </figure>
   </div>*/}

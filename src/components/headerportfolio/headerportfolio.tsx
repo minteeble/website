@@ -87,10 +87,10 @@ const headerportfolio = () => {
               <div className="screen">
                 <div className="notch"></div>
 
-                <img className="zb" src="build/images/zb.webp" alt="screen-exe" />
-                <img className="benjis" src="build/images/benjis.webp" alt="screen-exe" />
-                <img src="build/images/green.webp" alt="screen-exe" />
-                <img src="build/images/crash.webp" alt="screen-exe" />
+                <img className="zb" src="/build/images/zb.webp" alt="screen-exe" />
+                <img className="benjis" src="/build/images/benjis.webp" alt="screen-exe" />
+                <img src="/build/images/green.webp" alt="screen-exe" />
+                <img src="/build/images/crash.webp" alt="screen-exe" />
 
               </div>
             </div>
