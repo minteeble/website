@@ -23,10 +23,10 @@ const asection = () => {
         <div className="row">
           <div className="column-as">
             <div className="section-heading">
-              <h2 className="after">Powered with multiple design blocks
+              <h2 className="after">What our customers think of us
 
               </h2>
-              <p className="p-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nulla, voluptates. Architecto eum minima necessitatibus quo reiciendis!</p>
+              <p className="p-margin">Over time we have created many projects and all our customers have always been satisfied with our work.</p>
             </div>
             <div className="nav">
               <button className="b-decoration a-decoration a-backgr-color"><a >
@@ -36,15 +36,15 @@ const asection = () => {
           <div className="column-as height-auto">
             <div className="image-as">
               <figure>
-                <img src="https://5studios.net/laravel/laapp/img/screens/app/pieces/1.png" alt="image" /></figure>
+                <img src="/build/images/review1.png" alt="image" /></figure>
             </div>
             <div className="image-as margin-top">
               <figure>
-                <img src="https://5studios.net/laravel/laapp/img/screens/app/pieces/2.png" alt="image" /></figure>
+                <img src="/build/images/review2.png" alt="image" /></figure>
             </div>
             <div className="image-as margin-top">
               <figure>
-                <img src="https://5studios.net/laravel/laapp/img/screens/app/pieces/3.png" alt="image" /></figure>
+                <img src="/build/images/review3.png" alt="image" /></figure>
             </div>
           </div>
         </div>

@@ -417,7 +417,8 @@ hr {
 .third-section {
     padding-top: 90px;
     padding-bottom: 90px;
-
+    z-index: -1;
+    position: relative;
 
     .section-heading {
         color: #FFFFFF;

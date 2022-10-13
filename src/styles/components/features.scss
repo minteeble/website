@@ -18,13 +18,13 @@
             .heading-text {
                 color: white;
                 font-weight: bold;
-                width: 100%;
-                margin-top: 0;
-                margin-bottom: 0;
+                // width: 100%;
+                margin: 0rem 1.5rem;
                 font-weight: 400;
                 font-size: 2.9rem;
                 letter-spacing: .05rem;
                 line-height: 1.2;
+
 
                 &::after {
                     content: "";
@@ -51,7 +51,7 @@
             .column {
                 border-radius: 0.25rem;
                 padding: 1.5rem 15px 1.5rem 15px;
-                max-width: 33.3333333333%;
+                max-width: 25%;
 
                 .icon {
                     width: 41.91px;
@@ -74,6 +74,27 @@
                 cursor: pointer;
                 box-shadow: 0 3px 15px rgb(24 156 189 / 39%) !important;
 
+            }
+
+
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        height: unset;
+
+        .container {
+            .row {
+                flex-direction: column;
+                align-items: center;
+
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    max-width: 60%;
+                }
             }
         }
     }

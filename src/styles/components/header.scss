@@ -435,16 +435,19 @@ header {
             .nav {
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
+                flex-wrap: nowrap!important;
                 margin-top: 2rem;
                 justify-content: start;
-a{
-    text-decoration: none;
-    color:currentColor;
-}
-form{
-    margin-right: 7%;
-}
+
+                a {
+                    text-decoration: none;
+                    color: currentColor;
+                }
+
+                form {
+                    margin-right: 7%;
+                }
+
                 .b-decoration {
                     border: none;
                     border-radius: 40px;
@@ -622,14 +625,23 @@ form{
 
             .width-a {
                 max-width: 700px;
+
+                @media screen and (max-width:980px) {
+
+                    max-width: 500px !important;
+
+
+                }
             }
+
+
+
 
             .column-r {
                 z-index: -1;
                 max-height: 517px;
                 position: relative;
-                padding-left: 15px;
-                padding-right: 15px;
+
 
                 h1 {
                     line-height: 1;
@@ -639,6 +651,7 @@ form{
                     animation: column-r-h1 1.5s ease forwards;
                 }
 
+              
                 @keyframes column-r-h1 {
                     from {
                         transform: translateX(-25vh);
@@ -677,6 +690,13 @@ form{
                     }
                 }
             }
+
+            @media screen and (max-width:550px) {
+                .column-r h1 {    
+                     font-size: 66px!important;
+                 }
+             
+             }
         }
     }
 
@@ -693,6 +713,16 @@ form{
         overflow: hidden;
         border: 4px solid black;
         animation: iphone14pro 1.7s ease forwards;
+
+
+
+    }
+
+    @media screen and (max-width:980px) {
+        .width-b .iphone14pro {
+            margin-top: 2rem;
+        }
+
     }
 
     @keyframes iphone14pro {
