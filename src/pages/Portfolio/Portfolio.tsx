@@ -36,13 +36,16 @@ import Mintingdapp from "../../components/mintingdapp";
 import Games from "../../components/games";
 
 const Portfolio = () => {
-
   return (
     <div className="portfolio">
       <Headerportfolio />
-      <div className="margin"><Featuresportfolio /></div>
-      <div className="margin"><Mintingdapp /></div>
-      <div className="margin"><Games /></div>
+      <div className="margin">
+        <Featuresportfolio />
+      </div>
+      <div className="margin">
+        <Mintingdapp />
+      </div>
+      {/* <div className="margin"><Games /></div> */}
       <Footer />
     </div>
   );
