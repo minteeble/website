@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faBars, faDiamond, faGem, faHandsBubbles, faLightbulb, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faBars, faCode, faDiamond, faGem, faHandsBubbles, faLightbulb, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 
 // @ts-ignore
 import AOS from "aos";
@@ -30,17 +30,26 @@ const mintingdapp = () => {
         <Popup open={PopupOpen3} setOpen={setPopupOpen3} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp1.png" alt="" /></>}
           description={
             <>
-              <p>A collection of 3,500 unique, Ethereum NFTs called Fighterpunks™ by the Metaverse Fight League™. A cultural movement to bring live combat sports to the next generation of fans; video-game visuals, more relatable content and fan ownership.</p>
-              <p>Each Fighterpunk is computer generated with a truly unique combination of traits and a randomly assigned set of attributes - which give the owner commercial rights for Metaverse Fight League event passes, plus image licensing rights.</p>
+              <p>
+                Dubai's most insane car collectible NFTs.
+                A collection of 5,001 3D animated NFTs for the first time ever</p>
+
+                <p>The most insane car collectible NFTs with incredible collaborations from around the world. Engines are hot and the presale is live. Monsters by ZB Dubai Club is different from every other NFT project through our utility. We reward our club members with the most unbelievable giveaway to exist ever.</p>
             </>}
-          button="https://chirpychicksnft.netlify.app/">
+          button="https://mint.zbdubaiclub.com">
         </Popup>
         <Popup open={PopupOpen4} setOpen={setPopupOpen4} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp2.png" alt="" /></>}
           description={<></>}
-          button="https://chirpychicksnft.netlify.app/">
+          button="https://gangstagiraffes.com/">
         </Popup>
         <Popup open={PopupOpen5} setOpen={setPopupOpen5} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp3.png" alt="" /></>}
-          description={<></>}
+          description={<>
+          <p>They have escaped from their cages, they are many, unique and fresh.</p>
+          <p>They have different skin, gender and personality.</p>
+          <p>8888 unique geckos are ready to be caught.</p>
+
+          
+          </>}
           button="https://chirpychicksnft.netlify.app/">
         </Popup>
 
@@ -50,7 +59,7 @@ const mintingdapp = () => {
           <div className="divider-custom">
             <div className="line-custom m-lf"></div>
             <div className="minte-custom">
-              <img src="/build/images/logo.png" alt="" />
+            <FontAwesomeIcon className="icon" icon={faCode} />
             </div>
             <div className="line-custom m-rg"></div>
           </div>

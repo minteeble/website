@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faBars, faDiamond, faGem, faHandsBubbles, faLightbulb, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faBars, faDiamond, faGem, faHandsBubbles, faLightbulb, faRocket, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 
 // @ts-ignore
 import AOS from "aos";
@@ -41,10 +41,15 @@ const featuresportfolio = () => {
       >
       </Popup>
       <Popup open={PopupOpen2} setOpen={setPopupOpen2} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/website3.png" alt="" /></>}
-        description={<></>}
+        description={<>
+        <p>The first NFT to encourage women that it’s never too late to start something you love.Beauty doesn’t age. Talent stays flawless.</p>
+
+        <p>Aurora, the creator of Prettiestwoman who is 65 years old. She started painting when she was 60 years old. Painted these 10,000 art NFT pieces to empower women to discover their own passions</p>
+
+        </>}
 
 
-        button="https://chirpychicksnft.netlify.app/">
+        button="https://prettiestwomen.art/">
       </Popup>
 
       <div className="container">
@@ -54,7 +59,7 @@ const featuresportfolio = () => {
           <div className="divider-custom">
             <div className="line-custom m-lf"></div>
             <div className="minte-custom">
-              <img src="/build/images/logo.png" alt="" />
+            <FontAwesomeIcon icon={faRocket} />
             </div>
             <div className="line-custom m-rg"></div>
           </div>
