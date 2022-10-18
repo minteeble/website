@@ -1,6 +1,7 @@
 {
   "build/main.css": "http://localhost:8080/build/main.css",
   "build/main.js": "http://localhost:8080/build/main.js",
+  "build/images/banner.png": "http://localhost:8080/build/images/banner.png",
   "build/images/portfolio/website1.png": "http://localhost:8080/build/images/portfolio/website1.png",
   "build/images/portfolio/dapp1.png": "http://localhost:8080/build/images/portfolio/dapp1.png",
   "build/images/portfolio/dapp2.png": "http://localhost:8080/build/images/portfolio/dapp2.png",
