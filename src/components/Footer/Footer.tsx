@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
 
-    <div className="footer">
+    <div className="footer" id="contact">
       <div className="footer-cont">
         <div className="row">
           <div className="a-colum-ft padding">

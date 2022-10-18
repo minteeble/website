@@ -6,6 +6,7 @@ import { faArrowRight, faBars, faDiamond, faGem, faHandsBubbles, faLightbulb, fa
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Popup from "../Popup";
+import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
 
 
 const featuresportfolio = () => {
@@ -42,9 +43,9 @@ const featuresportfolio = () => {
       </Popup>
       <Popup open={PopupOpen2} setOpen={setPopupOpen2} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/website3.png" alt="" /></>}
         description={<>
-        <p>The first NFT to encourage women that it’s never too late to start something you love.Beauty doesn’t age. Talent stays flawless.</p>
+          <p>The first NFT to encourage women that it’s never too late to start something you love.Beauty doesn’t age. Talent stays flawless.</p>
 
-        <p>Aurora, the creator of Prettiestwoman who is 65 years old. She started painting when she was 60 years old. Painted these 10,000 art NFT pieces to empower women to discover their own passions</p>
+          <p>Aurora, the creator of Prettiestwoman who is 65 years old. She started painting when she was 60 years old. Painted these 10,000 art NFT pieces to empower women to discover their own passions</p>
 
         </>}
 
@@ -55,11 +56,11 @@ const featuresportfolio = () => {
       <div className="container">
         <div className="heading">
           <h2 id="website" className="heading-text">
-            Websites</h2>
+            Web3</h2>
           <div className="divider-custom">
             <div className="line-custom m-lf"></div>
             <div className="minte-custom">
-            <FontAwesomeIcon icon={faRocket} />
+              <FontAwesomeIcon className="icon" icon={faBitcoin} />
             </div>
             <div className="line-custom m-rg"></div>
           </div>

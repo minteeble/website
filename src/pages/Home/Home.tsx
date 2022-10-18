@@ -193,12 +193,12 @@ const Home = () => {
                 </span> */}
               </div>
               <div className="socials">
-                <a href="">
+                <a href="https://www.instagram.com/_chiaretta23/" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <a href="">
+                {/*<a href="">
                   <FontAwesomeIcon icon={faLinkedin} />
-                </a>
+              </a>*/}
               </div>
             </div>
           </div>

@@ -27,7 +27,7 @@
             width: 200px;
             height: 200px;
 
-            left: 50%;
+            left: 30%;
             top: 0;
             animation: iconanimated 15s linear infinite alternate;
 
@@ -45,7 +45,7 @@
             }
 
             100% {
-                transform: translate(300px, -150px) rotate(180deg);
+                transform: translate(254px, -150px) rotate(180deg);
             }
         }
 

@@ -417,7 +417,7 @@ hr {
 .third-section {
     padding-top: 90px;
     padding-bottom: 90px;
-    z-index: -1;
+    z-index: 0;
     position: relative;
 
     .section-heading {
@@ -543,6 +543,7 @@ hr {
             justify-content: space-between;
             width: 30%;
             padding-top: 0.5rem;
+            justify-content: center;
 
             a {
                 color: white;

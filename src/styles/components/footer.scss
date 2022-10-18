@@ -64,6 +64,10 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
         max-width: 200px;
         display: flex;
         flex-direction: column;
+        .text{
+          
+        }
+        
       }
 
       .decoration {
@@ -83,6 +87,10 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
         a {
           text-decoration: none;
           color: white;
+          opacity: 0.7;
+        }
+        a:hover{
+          opacity:1;
         }
 
         .color {
@@ -116,7 +124,7 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
       }
 
       .row-ft-l {
-        width: 50%;
+        
         padding: 10px;
         display: flex;
         flex-direction: row;
@@ -128,7 +136,7 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
       }
 
       .right {
-        width: 50%;
+        
         padding: 10px;
         display: flex;
         flex-direction: row;
