@@ -8,6 +8,7 @@ import {
   faPeopleGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
+import ReactDOM from "react-dom";
 
 const Navbar = () => {
   const [fix, setFix] = useState(false);
@@ -26,6 +27,7 @@ const Navbar = () => {
   };
 
   window.addEventListener("scroll", setFixed);
+
   return (
     <div className="top">
       <nav className={fix ? "navbar fixed" : "navbar"}>
@@ -35,7 +37,7 @@ const Navbar = () => {
           </div>
 
           <a href="#home-page" className="nav-a">
-            <img className="nav-logo" src="/build/images/logo.png" alt="" />
+            <img className="nav-logo" src="/build/images/logo.webp" alt="" />
           </a>
 
           <div className={side ? "collapse animate" : "collapse "}>
@@ -100,3 +102,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+document.addEventListener("DOMContentLoaded", async () => {
+  ReactDOM.render(<Navbar />, document.getElementById("navbar"));
+});

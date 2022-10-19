@@ -3,18 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faTiktok, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
+import ReactDOM from "react-dom";
 
 
 const Footer = () => {
   const [email, setEmail] = useState<string>("");
 
   return (
-
-    <div className="footer" id="contact">
+    <section className="footer" id="contact">
       <div className="footer-cont">
         <div className="row">
           <div className="a-colum-ft padding">
-            <img className="logo-minte" src="/build/images/Logosmall.png" alt="" />
+            <img className="logo-minte" src="/build/images/Logosmall.webp" alt="logo" />
             <p className="description-minte">Build your own awesome Web3 applications and start exploring this new world. What are you waiting for?</p>
           </div>
           <div className="colum padding">
@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="top">Connect</div>
             <div className="text">
               <ul className="decoration">
-                <li>+39 ---</li>
+                {/*<li>+39 ---</li>*/}
                 <li><a href=""><span className="color">minteeble@gmail.com</span></a></li>
 
               </ul>
@@ -60,7 +60,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
 
     //  <div className="footer">
     //   <div className="container">
@@ -210,3 +211,7 @@ const Footer = () => {
 
 
 export default Footer;
+
+document.addEventListener("DOMContentLoaded", async () => {
+  ReactDOM.render(<Footer />, document.getElementById("footer"));
+});

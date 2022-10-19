@@ -17,7 +17,7 @@ const featuresportfolio = () => {
   return (
     <section className="section-featuresportfolio" id="features">
       <Popup open={PopupOpen} setOpen={setPopupOpen} title={"Profile"} logo={false}
-        image={<><img src="/build/images/portfolio/website1.png" alt="" /></>}
+        image={<><img src="/build/images/portfolio/website1.webp" alt="" /></>}
         description={
           <>
             <p>A collection of 3,500 unique, Ethereum NFTs called Fighterpunks™ by the Metaverse Fight League™. A cultural movement to bring live combat sports to the next generation of fans; video-game visuals, more relatable content and fan ownership.</p>
@@ -69,7 +69,7 @@ const featuresportfolio = () => {
           <div className="column">
             <figure onClick={() => {
               setPopupOpen((v) => !v);
-            }}> <img src="/build/images/portfolio/website1.png" alt="" />
+            }}> <img src="/build/images/portfolio/website1.webp" alt="website1" />
               <figcaption>Fighter Punks</figcaption>
             </figure>
 
@@ -77,14 +77,14 @@ const featuresportfolio = () => {
           <div className="column">
             <figure onClick={() => {
               setPopupOpen1((v) => !v);
-            }}> <img src="/build/images/portfolio/website2.png" alt="" />
+            }}> <img src="/build/images/portfolio/website2.webp" alt="website2" />
               <figcaption>Chirpy Chicks</figcaption>
             </figure>
           </div>
           <div className="column">
             <figure onClick={() => {
               setPopupOpen2((v) => !v);
-            }}> <img src="/build/images/portfolio/website3.png" alt="" />
+            }}> <img src="/build/images/portfolio/website3.webp" alt="website3" />
               <figcaption>Prettiest woman</figcaption>
             </figure>
           </div>

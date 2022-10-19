@@ -54,10 +54,10 @@ const Popup = (props: PopupProps) => {
         <div className="main-content">
           {props.image}
 
-          <div className="divider-custom"><div className="line-custom m-lf"></div><div className="minte-custom"><img src="/build/images/logo.png" alt="" /> </div><div className="line-custom m-rg"></div></div>
+          <div className="divider-custom"><div className="line-custom m-lf"></div><div className="minte-custom"><img src="/build/images/logo.webp" alt="" /> </div><div className="line-custom m-rg"></div></div>
           <div className="description">{props.description}</div>
           <form action={props.button}>
-          <button >See more</button>
+            <button >See more</button>
           </form>
         </div>
 

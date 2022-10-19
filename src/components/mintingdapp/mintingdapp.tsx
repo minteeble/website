@@ -28,7 +28,7 @@ const mintingdapp = () => {
         </div>
       </div>
       <div className="container">
-        <Popup open={PopupOpen3} setOpen={setPopupOpen3} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp1.png" alt="" /></>}
+        <Popup open={PopupOpen3} setOpen={setPopupOpen3} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp1.webp" alt="dapp1" /></>}
           description={
             <>
               <p>
@@ -39,11 +39,11 @@ const mintingdapp = () => {
             </>}
           button="https://mint.zbdubaiclub.com">
         </Popup>
-        <Popup open={PopupOpen4} setOpen={setPopupOpen4} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp2.png" alt="" /></>}
+        <Popup open={PopupOpen4} setOpen={setPopupOpen4} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp2.webp" alt="dapp2" /></>}
           description={<></>}
           button="https://gangstagiraffes.com/">
         </Popup>
-        <Popup open={PopupOpen5} setOpen={setPopupOpen5} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp3.png" alt="" /></>}
+        <Popup open={PopupOpen5} setOpen={setPopupOpen5} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/dapp3.webp" alt="dapp2" /></>}
           description={<>
             <p>They have escaped from their cages, they are many, unique and fresh.</p>
             <p>They have different skin, gender and personality.</p>

@@ -25,11 +25,12 @@ import {
   faMailBulk,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
-import Header from "../../components/header";
+import Header from "../../components/homesection";
 import Features from "../../components/features";
-import Asection from "../../components/asection";
-import Staytunned from "../../components/staytunned";
+import Asection from "../../components/reviewsection";
+import Staytunned from "../../components/staytunnedsection";
 import Footer from "../../components/Footer";
+import Sectionhome from "../../components/homesection";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -42,8 +43,8 @@ const Home = () => {
 
   return (
     <div className="home-page" id="home-page">
-      <Navbar />
-      <Header />
+
+      <Sectionhome />
       <Features />
       <Asection />
 
@@ -119,7 +120,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="third-section" id="team-section">
+      <section className="team-section" id="team-section">
         <div className="section-heading">
           <span>Our Valus</span>
           <h1>
@@ -136,7 +137,7 @@ const Home = () => {
             <div className="team-grid">
               {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
               <div className="cropper">
-                <img src="/build/images/user1.jpg" />
+                <img src="/build/images/user1.webp" alt="user1" />
               </div>
               <div className="content">
                 <h4>Samuele Girgenti</h4>
@@ -160,7 +161,7 @@ const Home = () => {
             <div className="team-grid">
               {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
               <div className="cropper">
-                <img src="/build/images/user2.jpg" />
+                <img src="/build/images/user2.webp" alt="user2" />
               </div>
               <div className="content" id="container2">
                 <h4>Alessandro Privitera</h4>
@@ -185,7 +186,7 @@ const Home = () => {
             <div className="team-grid">
               {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
               <div className="cropper">
-                <img src="/build/images/user3.jpg" />
+                <img src="/build/images/user3.webp" alt="user3" />
               </div>
               <div className="content">
                 <h4>Chiara Motta</h4>
@@ -203,9 +204,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <Staytunned />
-      <Footer />
 
     </div>
   );

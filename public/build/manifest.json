@@ -29,5 +29,22 @@
   "build/images/Logosmall.png": "http://localhost:8080/build/images/Logosmall.png",
   "build/images/minty.svg": "http://localhost:8080/build/images/minty.svg",
   "build/images/favicon.ico": "http://localhost:8080/build/images/favicon.ico",
-  "build/images/Polygon.svg": "http://localhost:8080/build/images/Polygon.svg"
+  "build/images/Polygon.svg": "http://localhost:8080/build/images/Polygon.svg",
+  "build/images/banner.webp": "http://localhost:8080/build/images/banner.webp",
+  "build/images/review2.webp": "http://localhost:8080/build/images/review2.webp",
+  "build/images/review3.webp": "http://localhost:8080/build/images/review3.webp",
+  "build/images/review1.webp": "http://localhost:8080/build/images/review1.webp",
+  "build/images/user2.webp": "http://localhost:8080/build/images/user2.webp",
+  "build/images/user1.webp": "http://localhost:8080/build/images/user1.webp",
+  "build/images/user3.webp": "http://localhost:8080/build/images/user3.webp",
+  "build/images/Logosmall.webp": "http://localhost:8080/build/images/Logosmall.webp",
+  "build/images/logo.webp": "http://localhost:8080/build/images/logo.webp",
+  "build/images/fav.webp": "http://localhost:8080/build/images/fav.webp",
+  "build/images/portfolio/website1.webp": "http://localhost:8080/build/images/portfolio/website1.webp",
+  "build/images/portfolio/website2.webp": "http://localhost:8080/build/images/portfolio/website2.webp",
+  "build/images/portfolio/website3.webp": "http://localhost:8080/build/images/portfolio/website3.webp",
+  "build/images/portfolio/dapp3.webp": "http://localhost:8080/build/images/portfolio/dapp3.webp",
+  "build/images/portfolio/dapp2.webp": "http://localhost:8080/build/images/portfolio/dapp2.webp",
+  "build/images/portfolio/dapp1.webp": "http://localhost:8080/build/images/portfolio/dapp1.webp",
+  "build/images/portfolio/game1.webp": "http://localhost:8080/build/images/portfolio/game1.webp"
 }

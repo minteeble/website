@@ -25,12 +25,12 @@ import {
   faMailBulk,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
-import Header from "../../components/header";
+import Header from "../../components/homesection";
 import Features from "../../components/features";
-import Asection from "../../components/asection";
-import Staytunned from "../../components/staytunned";
+import Asection from "../../components/reviewsection";
+import Staytunned from "../../components/staytunnedsection";
 import Footer from "../../components/Footer";
-import Headerportfolio from "../../components/headerportfolio";
+import Headerportfolio from "../../components/portfoliosection";
 import Featuresportfolio from "../../components/featuresportfolio";
 import Mintingdapp from "../../components/mintingdapp";
 import Games from "../../components/games";
@@ -39,12 +39,12 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <Headerportfolio />
-      <div className="margin">
-        <Featuresportfolio />
-      </div>
-      <div className="margin">
-        <Mintingdapp />
-      </div>
+
+      <Featuresportfolio />
+
+
+      <Mintingdapp />
+
       {/* <div className="margin"><Games /></div> */}
       <Footer />
     </div>

@@ -6,6 +6,7 @@ import Popup from "../Popup";
 // @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
 
 
 const games = () => {
@@ -13,9 +14,9 @@ const games = () => {
 
   return (
     <section className="section-featuresportfolio" id="features">
-      <Popup open={PopupOpen6} setOpen={setPopupOpen6} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/game1.png" alt="" /></>}
-         description={<></>} 
-         button="https://chirpychicksnft.netlify.app/">
+      <Popup open={PopupOpen6} setOpen={setPopupOpen6} title={"Profile"} logo={false} image={<><img src="/build/images/portfolio/game1.png" alt="game1" /></>}
+        description={<></>}
+        button="https://chirpychicksnft.netlify.app/">
       </Popup>
       <div className="container">
         <div className="heading">
@@ -24,7 +25,8 @@ const games = () => {
           <div className="divider-custom">
             <div className="line-custom m-lf"></div>
             <div className="minte-custom">
-              <img src="/build/images/logo.png" alt="" />
+              <FontAwesomeIcon className="icon" icon={faDiamond} />
+              <img src="/build/images/logo.webp" alt="small-logo" />
             </div>
             <div className="line-custom m-rg"></div>
           </div>
@@ -33,7 +35,7 @@ const games = () => {
           <div className="column game">
             <figure onClick={() => {
               setPopupOpen6((v) => !v);
-            }}> <img src="/build/images/portfolio/game1.png" alt="" />
+            }}> <img src="/build/images/portfolio/game1.webp" alt="" />
               <figcaption>The Crypto Crash</figcaption>
             </figure>
 

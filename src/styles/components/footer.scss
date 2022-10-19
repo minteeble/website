@@ -69,6 +69,11 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
         }
         
       }
+      @media screen and (max-width:550px){
+        .colum{
+          align-items: center;
+        }
+      }
 
       .decoration {
         list-style: none;
