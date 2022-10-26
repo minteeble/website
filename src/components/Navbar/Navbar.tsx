@@ -29,7 +29,7 @@ const Navbar = () => {
   window.addEventListener("scroll", setFixed);
 
   return (
-    <div className="top">
+    <header className="top">
       <nav className={fix ? "navbar fixed" : "navbar"}>
         <div className="container">
           <div onClick={handleClick} className="mobile-hamburger">
@@ -97,7 +97,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div> */}
-    </div>
+    </header>
   );
 };
 
