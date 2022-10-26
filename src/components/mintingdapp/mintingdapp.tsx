@@ -69,7 +69,7 @@ const mintingdapp = () => {
           <div className="column">
             <figure onClick={() => {
               setPopupOpen3((v) => !v);
-            }}> <img src="/build/images/portfolio/dapp1.png" alt="" />
+            }}> <img src="/build/images/portfolio/dapp1.webp" alt="dapp1" />
               <figcaption>ZB Dubai Club</figcaption>
             </figure>
 
@@ -77,14 +77,14 @@ const mintingdapp = () => {
           <div className="column">
             <figure onClick={() => {
               setPopupOpen4((v) => !v);
-            }}> <img src="/build/images/portfolio/dapp2.png" alt="" />
+            }}> <img src="/build/images/portfolio/dapp2.webp" alt="dapp1" />
               <figcaption>Gangsta Giraffes</figcaption>
             </figure>
           </div>
           <div className="column">
             <figure onClick={() => {
               setPopupOpen5((v) => !v);
-            }}> <img src="/build/images/portfolio/dapp3.png" alt="" />
+            }}> <img src="/build/images/portfolio/dapp3.webp" alt="dapp1" />
               <figcaption>Urban Geckos Club</figcaption>
             </figure>
           </div>
