@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
   faClose,
+  faCode,
   faDiagramProject,
   faHouseChimney,
   faPeopleGroup,
@@ -58,19 +59,33 @@ const Navbar = () => {
                   Home
                 </a>
               </li>
-
+              
               <li className="nav-item">
+                {" "}
+                <a className="nav-text" href="#features">
+                <FontAwesomeIcon className="icon" icon={faDiagramProject} />
+                  Premium Features
+                </a>
+              </li>
+              <li className="nav-item">
+                {" "}
+                <a className="nav-text" href="#contracts">
+                <FontAwesomeIcon className="icon" icon={faCode} />
+                  Contracts
+                </a>
+              </li>
+              {/* <li className="nav-item">
                 <a className="nav-text" href="/Portfolio">
                   <FontAwesomeIcon className="icon" icon={faDiagramProject} />
                   Portfolio
                 </a>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <a className="nav-text" href="#team-section">
                   <FontAwesomeIcon className="icon" icon={faPeopleGroup} />
                   Team
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a className="nav-text" href="#contact">
                   <FontAwesomeIcon className="icon" icon={faMessage} />

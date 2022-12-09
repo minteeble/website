@@ -31,6 +31,7 @@ import Asection from "../../components/reviewsection";
 import Staytunned from "../../components/staytunnedsection";
 import Footer from "../../components/Footer";
 import Sectionhome from "../../components/homesection";
+import Contracts from "../../components/contracts";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -52,9 +53,41 @@ const Home = () => {
 
         <Features />
 
+        <div className="container-project">
+          <div className="upper"></div>
+          <div className="main">
+            <div className="title">Projects that have worked with our libraries</div>
+            <div className="logos">
+              <div className="logo">
+                <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+              </div>
+              <div className="logo">
+              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+              </div>
+              <div className="logo">
+              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+              </div>
+              <div className="logo">
+              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+              </div>
+              <div className="logo">
+              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+
+              </div>
+              <div className="logo">
+              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+              </div>
+            </div>
+          </div>
+          <div className="lower"></div>
+
+        </div>
+
+        <Contracts/>
+
         <Asection />
 
-        <section className="team-section" id="team-section">
+        {/* <section className="team-section" id="team-section">
           <div className="section-heading">
             <span>Our Valus</span>
             <h1>
@@ -69,19 +102,19 @@ const Home = () => {
           <div className="row-grid">
             <div className="container" data-aos="fade-up">
               <div className="team-grid">
-                {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
+               //<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>
                 <div className="cropper">
                   <img src="/build/images/user1.webp" alt="user1" />
                 </div>
                 <div className="content">
                   <h4>Samuele Girgenti</h4>
-                  {/* <span>MIT
-                </span> */}
+                  //<span>MIT
+              //  </span>
                 </div>
                 <div className="socials">
-                  {/* <a href="">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a> */}
+                // <a href="">
+                //  <FontAwesomeIcon icon={faInstagram} />
+               // </a>
                   <a
                     href="https://www.linkedin.com/in/samuele-girgenti"
                     target="_blank"
@@ -93,19 +126,19 @@ const Home = () => {
             </div>
             <div className="container" data-aos="fade-up">
               <div className="team-grid">
-                {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
+               // <div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>
                 <div className="cropper">
                   <img src="/build/images/user2.webp" alt="user2" />
                 </div>
                 <div className="content" id="container2">
                   <h4>Alessandro Privitera</h4>
-                  {/* <span>BAO
-                </span> */}
+                 // <span>BAO
+                 //</span>
                 </div>
                 <div className="socials">
-                  {/* <a href="">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a> */}
+                //  <a href="">
+                //  <FontAwesomeIcon icon={faInstagram} />
+               // </a>
                   <a
                     href="https://www.linkedin.com/in/mario-alessandro-privitera/"
                     target="_blank"
@@ -118,27 +151,27 @@ const Home = () => {
 
             <div className="container" data-aos="fade-up">
               <div className="team-grid">
-                {/*<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>*/}
+              // <div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>
                 <div className="cropper">
                   <img src="/build/images/user3.webp" alt="user3" />
                 </div>
                 <div className="content">
                   <h4>Chiara Motta</h4>
-                  {/* <span>BAU
-                </span> */}
+                  // <span>BAU
+                  //</span>
                 </div>
                 <div className="socials">
                   <a href="https://www.instagram.com/_chiaretta23/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
-                  {/*<a href="">
-                  <FontAwesomeIcon icon={faLinkedin} />
-              </a>*/}
+                  // <a href="">
+                  //<FontAwesomeIcon icon={faLinkedin} />
+                  // </a>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <Staytunned />
 
