@@ -36,43 +36,51 @@ const homesection = () => {
         }
         if(ringR.current){
           ringR.current.style.right = `${0+(e.clientX/200)}rem`
-          ringR.current.style.top = `${18+(e.clientY/200)}%`
+          ringR.current.style.top = `${18-(e.clientY/200)}%`
         }
         if(ringL.current){
           ringL.current.style.left = `${0-(e.clientX/300)}rem`
+          ringL.current.style.top = `${35-(e.clientY/300)}%`
         }
         if(patternShape.current){
-          patternShape.current.style.left = `${0-(e.clientX/100)}rem`
+          patternShape.current.style.left = `${0-(e.clientX/200)}rem`
         }
         if(bPatternShape.current){
-          bPatternShape.current.style.right = `${0+(e.clientX/100)}rem`
+          bPatternShape.current.style.right = `${0+(e.clientX/200)}rem`
         }
         if(longShape.current){
-          longShape.current.style.left = `${22-(e.clientX/300)}%`
+          longShape.current.style.left = `${22-(e.clientX/600)}%`
         }
         if(shortShape.current){
-          shortShape.current.style.left = `${20.5-(e.clientX/200)}%`
+          shortShape.current.style.left = `${20.5-(e.clientX/400)}%`
+          shortShape.current.style.top = `${9-(e.clientY/400)}rem`
         }
         if(bLongShape.current){
-          bLongShape.current.style.left = `${45-(e.clientX/350)}%`
+          bLongShape.current.style.left = `${45-(e.clientX/700)}%`
+          bLongShape.current.style.top = `${80-(e.clientY/700)}%`
         }
         if(bShortShape.current){
-          bShortShape.current.style.left = `${45-(e.clientX/250)}%`
+          bShortShape.current.style.left = `${45-(e.clientX/500)}%`
+          bShortShape.current.style.top = `${82-(e.clientY/500)}%`
         }
         if(cLongShape.current){
-          cLongShape.current.style.left = `${0-(e.clientX/150)}%`
+          cLongShape.current.style.left = `${0-(e.clientX/300)}%`
+          cLongShape.current.style.top = `${20-(e.clientY/300)}%`
         }
         if(cShortShape.current){
-          cShortShape.current.style.left = `${4-(e.clientX/350)}%`
+          cShortShape.current.style.left = `${4-(e.clientX/700)}%`
+          cShortShape.current.style.top = `${17-(e.clientY/700)}%`
         }
         if(lonelyShape.current){
-          lonelyShape.current.style.left = `${5-(e.clientX/250)}%`
+          lonelyShape.current.style.left = `${5-(e.clientX/500)}%`
         }
         if(dLongShape.current){
-          dLongShape.current.style.left = `${-5-(e.clientX/200)}%`
+          dLongShape.current.style.left = `${-5-(e.clientX/400)}%`
+          dLongShape.current.style.top = `${70%-(e.clientY/400)}%`
         }
         if(dShortShape.current){
-          dShortShape.current.style.left = `${-5-(e.clientX/100)}%`
+          dShortShape.current.style.left = `${-5-(e.clientX/200)}%`
+          dShortShape.current.style.top = `${72-(e.clientY/200)}%`
         }
       }
     })
