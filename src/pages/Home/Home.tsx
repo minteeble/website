@@ -25,13 +25,16 @@ import {
   faMailBulk,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
-import Header from "../../components/homesection";
+
 import Features from "../../components/features";
 import Asection from "../../components/reviewsection";
 import Staytunned from "../../components/staytunnedsection";
 import Footer from "../../components/Footer";
 import Sectionhome from "../../components/homesection";
 import Contracts from "../../components/contracts";
+import { Sidetab } from '@typeform/embed-react'
+
+
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -48,7 +51,7 @@ const Home = () => {
       <Navbar />
 
       <main>
-
+      <Sidetab id="WpoqqxS5" buttonText="click to open"  />
         <Sectionhome />
 
         <Features />
