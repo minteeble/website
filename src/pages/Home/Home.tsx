@@ -54,7 +54,6 @@ const Home = () => {
         <Features />
 
         <div className="container-project">
-          <div className="upper"></div>
           <div className="main">
             <div className="title">Projects that have worked with our libraries</div>
             <div className="logos">
@@ -79,7 +78,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="lower"></div>
 
         </div>
 

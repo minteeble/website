@@ -618,41 +618,40 @@ hr {
 
 .container-project{
     width: 100%;
-    height: 20rem;
     margin: 2rem 0;
+background:linear-gradient(78deg, #479db6, #1891bd);
+    padding: 3rem 0;
 
 
-.upper, .lower{
-width: 100%;
-height: 20%;
-background-color: #53C2DE;
-}
 .main{
-    height: 60%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #53C2DE;
 .title{
     color: white;
     font-size: 27px;
-    height: 20%;
+    text-align: center;
 }
 .logos{
-    width: 85%;
     height: 80%;
-    padding:1rem;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 0 1rem;
 
     .logo{
-        width: 30%;
-        display: flex;
-        justify-content: center;
+          display: flex;
+    justify-content: center;
+    /* width: 30%; */
+    max-width: 200px;
+    min-width: 200px;
+        img{
+            width: 100%;
+        }
     }
 }
 }
