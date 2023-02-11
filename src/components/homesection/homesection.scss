@@ -17,7 +17,9 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
     display: flex;
     text-align: left;
     align-items: flex-end;
-
+// @media screen and (max-width:650px) {
+//     padding: 0 0.5rem;
+// }
     .socials-row{
         display: flex;
         gap: 1rem;
@@ -673,7 +675,7 @@ width: 100%;            position: relative;
                     line-height: 1;
                     font-size: 88px;
                     margin: 0 0;
-                    color: #189cbd;
+                    color: #53c2de;
                     animation: column-r-h1 1.5s ease forwards;
                 }
 
