@@ -30,10 +30,10 @@ import Features from "../../components/features";
 import Asection from "../../components/reviewsection";
 import Staytunned from "../../components/staytunnedsection";
 import Footer from "../../components/Footer";
-import Headerportfolio from "../../components/portfoliosection";
-import Featuresportfolio from "../../components/featuresportfolio";
+import Headerportfolio from "../../components/PortoflioComponents/portfoliosection";
+import Featuresportfolio from "../../components/PortoflioComponents/featuresportfolio";
 import Mintingdapp from "../../components/mintingdapp";
-import Games from "../../components/games";
+import Games from "../../components/PortoflioComponents/games";
 
 const Portfolio = () => {
   return (
@@ -46,7 +46,6 @@ const Portfolio = () => {
       <Mintingdapp />
 
       {/* <div className="margin"><Games /></div> */}
-      <Footer />
     </div>
   );
 };

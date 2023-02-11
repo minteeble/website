@@ -10,7 +10,7 @@ const Footer = () => {
   const [email, setEmail] = useState<string>("");
 
   return (
-    <footer className="footer" id="contact">
+    <footer className="" id="contact">
       <div className="footer-cont">
         <div className="row">
           <div className="a-colum-ft padding">

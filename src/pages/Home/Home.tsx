@@ -47,14 +47,14 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
-
-      <main>
         <Sidetab id="WpoqqxS5" buttonText="click to open" />
         <Sectionhome />
 
         <Features />
 
+        
+
+        <Contracts />
         <div className="container-project">
           <div className="main">
             <div className="title">
@@ -106,9 +106,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <Contracts />
-
+        
         <div className="slideshow wrapper">
           <SlideShow
             type={SlideShowType.Infinite}
@@ -256,9 +254,6 @@ const Home = () => {
         </section> */}
 
         <Staytunned />
-      </main>
-
-      <Footer></Footer>
     </>
   );
 };

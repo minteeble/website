@@ -8,7 +8,7 @@ import ReactPlayer from 'react-player'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Type from "../Type";
-import { faEthereum } from "@fortawesome/free-brands-svg-icons";
+import { faEthereum, faInstagram, faTiktok, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 
 const homesection = () => {
@@ -144,7 +144,13 @@ const homesection = () => {
             <p className="f-size description" >Build your own awesome Web3
               applications and start exploring this new world. What are you
               waiting for?</p>
-            <div className="nav">
+              <div className="socials-row">
+              <a href=""><FontAwesomeIcon className="icon-size instagram" icon={faInstagram} /></a>
+              <a href="https://twitter.com/minteeble"><FontAwesomeIcon className="icon-size twitter" icon={faTwitter} /></a>
+              {/* <a href=""><FontAwesomeIcon className="icon-size tiktok" icon={faTiktok} /></a> */}
+              <a href=""><FontAwesomeIcon className="icon-size youtube" icon={faYoutube} /></a>
+            </div>
+            <div className="button-cont">
               <form className="margin-right" action="#features"><button className="b-decoration a-decoration b-backgr-color">
                 Know more  <FontAwesomeIcon icon={faChevronDown} />
               </button></form>
