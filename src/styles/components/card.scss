@@ -1,0 +1,67 @@
+.card-wrappers{
+    background-color: rgb(15 33 49);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .card-head{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        padding-top: 4rem;
+        flex: 1 1 0%;
+        
+        .card-square{
+            padding: 1.25rem;
+            background-color: rgb(255 222 1);
+            border-radius: 0.75rem;
+            position: absolute;
+            top: 0px;
+        }
+
+        .card-title{
+            color: rgb(243 244 246);
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+        .card-content{
+            color: rgb(209 213 219);
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-top: 1rem;
+
+        }
+    }
+
+    .card-foot{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding: 1.5rem;
+    background-color: rgb(17 24 39);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    .card-contact{
+
+    color: rgb(255 222 13);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+
+    .card-arrow{
+        color: rgb(255 222 13);
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        cursor: pointer;
+
+    }
+    }
+    }
+}

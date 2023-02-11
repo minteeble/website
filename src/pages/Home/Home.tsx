@@ -255,6 +255,14 @@ const Home = () => {
           </div>
         </section> */}
 
+        <section className="services">
+          <div className="ser-container">
+            <div className="ser-heading">
+              <h2 className="ser-heading-text" id="services">Services</h2>
+            </div>
+          </div>
+        </section>
+
         <Staytunned />
       </main>
 
