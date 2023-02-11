@@ -33,5 +33,18 @@
     margin-top: 2rem;
     text-align: center;
     letter-spacing: 1px;
+    line-height: 1.7rem;
+    .quotes {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      opacity: 0.5;
+    }
+  }
+  .rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
   }
 }
