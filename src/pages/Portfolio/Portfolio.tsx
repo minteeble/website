@@ -28,7 +28,7 @@ import {
 import Header from "../../components/homesection";
 import Features from "../../components/features";
 import Asection from "../../components/reviewsection";
-import Staytunned from "../../components/staytunnedsection";
+import Staytunned from "../../components/staytunedsection";
 import Footer from "../../components/Footer";
 import Headerportfolio from "../../components/PortoflioComponents/portfoliosection";
 import Featuresportfolio from "../../components/PortoflioComponents/featuresportfolio";
@@ -41,7 +41,6 @@ const Portfolio = () => {
       <Headerportfolio />
 
       <Featuresportfolio />
-
 
       <Mintingdapp />
 

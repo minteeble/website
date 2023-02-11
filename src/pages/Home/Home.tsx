@@ -28,7 +28,7 @@ import {
 
 import Features from "../../components/features";
 import Asection from "../../components/reviewsection";
-import Staytunned from "../../components/staytunnedsection";
+import Staytunned from "../../components/staytunedsection";
 import Footer from "../../components/Footer";
 import Sectionhome from "../../components/homesection";
 import Contracts from "../../components/contracts";
