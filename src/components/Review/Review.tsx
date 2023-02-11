@@ -12,10 +12,17 @@ const Review = (props: ReviewProps) => {
         <div className="name">{props.name}</div>
         <div className="job">{props.job}</div>
         <div className="review-body">
-          <FontAwesomeIcon icon={faQuoteLeft} />
+          <FontAwesomeIcon icon={faQuoteLeft} className={"quotes"} />
+
           {props.reviewBody}
         </div>
-        <div className="rate">⭐⭐⭐⭐⭐</div>
+        <div className="rate">
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+        </div>
       </div>
     </>
   );
