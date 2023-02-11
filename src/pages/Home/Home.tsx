@@ -32,9 +32,9 @@ import Staytunned from "../../components/staytunnedsection";
 import Footer from "../../components/Footer";
 import Sectionhome from "../../components/homesection";
 import Contracts from "../../components/contracts";
-import { Sidetab } from '@typeform/embed-react'
-
-
+import { Sidetab } from "@typeform/embed-react";
+import SlideShow, { SlideShowType } from "../../components/SlideShow";
+import Review from "../../components/Review";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -47,46 +47,127 @@ const Home = () => {
 
   return (
     <>
-
       <Navbar />
 
       <main>
-      <Sidetab id="WpoqqxS5" buttonText="click to open"  />
+        <Sidetab id="WpoqqxS5" buttonText="click to open" />
         <Sectionhome />
 
         <Features />
 
         <div className="container-project">
           <div className="main">
-            <div className="title">Projects that have worked with our libraries</div>
+            <div className="title">
+              Projects that have worked with our libraries
+            </div>
             <div className="logos">
               <div className="logo">
-                <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+                <img
+                  src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg"
+                  alt="coinbase"
+                  loading="lazy"
+                ></img>
               </div>
               <div className="logo">
-              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+                <img
+                  src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg"
+                  alt="coinbase"
+                  loading="lazy"
+                ></img>
               </div>
               <div className="logo">
-              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+                <img
+                  src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg"
+                  alt="coinbase"
+                  loading="lazy"
+                ></img>
               </div>
               <div className="logo">
-              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+                <img
+                  src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg"
+                  alt="coinbase"
+                  loading="lazy"
+                ></img>
               </div>
               <div className="logo">
-              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
-
+                <img
+                  src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg"
+                  alt="coinbase"
+                  loading="lazy"
+                ></img>
               </div>
               <div className="logo">
-              <img src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg" alt="coinbase" loading="lazy"></img>
+                <img
+                  src="https://www.openzeppelin.com/hubfs/Theme_2022/content/Logos/coinbase.svg"
+                  alt="coinbase"
+                  loading="lazy"
+                ></img>
               </div>
             </div>
           </div>
-
         </div>
 
-        <Contracts/>
+        <Contracts />
 
-        <Asection />
+        <div className="slideshow wrapper">
+          <SlideShow
+            type={SlideShowType.Infinite}
+            autoScroll
+            displayItems={3}
+            itemWidth={20}
+            gap={5}
+            items={[
+              <Review
+                avatar={"https://picsum.photos/200"}
+                name={"lorem ipsum"}
+                job={"web developer"}
+                reviewBody={
+                  "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+                }
+              />,
+              <Review
+                avatar={"https://picsum.photos/200"}
+                name={"lorem ipsum"}
+                job={"web developer"}
+                reviewBody={
+                  "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+                }
+              />,
+              <Review
+                avatar={"https://picsum.photos/200"}
+                name={"lorem ipsum"}
+                job={"web developer"}
+                reviewBody={
+                  "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+                }
+              />,
+              <Review
+                avatar={"https://picsum.photos/200"}
+                name={"lorem ipsum"}
+                job={"web developer"}
+                reviewBody={
+                  "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+                }
+              />,
+              <Review
+                avatar={"https://picsum.photos/200"}
+                name={"lorem ipsum"}
+                job={"web developer"}
+                reviewBody={
+                  "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+                }
+              />,
+              <Review
+                avatar={"https://picsum.photos/200"}
+                name={"lorem ipsum"}
+                job={"web developer"}
+                reviewBody={
+                  "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+                }
+              />,
+            ]}
+          />
+        </div>
 
         {/* <section className="team-section" id="team-section">
           <div className="section-heading">
@@ -175,9 +256,8 @@ const Home = () => {
         </section> */}
 
         <Staytunned />
-
       </main>
-      
+
       <Footer></Footer>
     </>
   );
