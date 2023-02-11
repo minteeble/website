@@ -63,8 +63,7 @@ const Navbar = () => {
                 {" "}
                 <a className="nav-text" href="#features">
                 <FontAwesomeIcon className="icon" icon={faDiagramProject} />
-                  Premium Features
-                </a>
+Services                </a>
               </li>
               <li className="nav-item">
                 {" "}
