@@ -35,6 +35,7 @@ import Contracts from "../../components/contracts";
 import { Sidetab } from "@typeform/embed-react";
 import SlideShow, { SlideShowType } from "../../components/SlideShow";
 import Review from "../../components/Review";
+import Contact from "../../components/Contact";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -256,6 +257,7 @@ const Home = () => {
         </section> */}
 
         <Staytunned />
+        <Contact />
       </main>
 
       <Footer></Footer>
