@@ -5,29 +5,7 @@ html {
 
 
 
-.top {
-    a {
-        font-weight: bold;
-        color: #FFFFFF;
-        opacity: 0.8;
-        text-decoration-line: none;
-        transition: all 0.5s ease;
-        text-decoration-color: #58d6c1;
-        
-    }
 
-    a:hover {
- scale: calc(1.1);
-        transition: all .5s ease;
-        opacity: 1;
-        text-decoration-line: underline;
-        text-decoration-color: #58d6c1;
-        text-decoration-style: solid;
-        text-decoration-thickness: 3px;
-    }
-
-
-}
 
 body {
     background-color: #212121;
@@ -587,7 +565,7 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
 
-    .cards {
+    .card {
         max-width: 30rem;
         display: flex;
         border-radius: 0rem 0rem 1rem 1rem;
