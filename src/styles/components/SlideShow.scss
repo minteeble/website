@@ -1,0 +1,113 @@
+.slideshow-container {
+  margin: 0 auto;
+  /*padding: 0 1.5rem; */
+  width: fit-content;
+
+  &:hover .slideshow .prev,
+  &:hover .slideshow .next {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &:hover .slideshow .prev {
+    transform: translate(-50%, -50%);
+  }
+  &:hover .slideshow .next {
+    transform: translate(50%, -50%);
+  }
+  .slideshow {
+    position: relative;
+    width: calc(
+      var(--width) * var(--items) + ((var(--items) - 1) * var(--gap))
+    );
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+
+    .next,
+    .prev {
+      opacity: 0;
+      // pointer-events: none;
+      position: absolute;
+
+      top: 50%;
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      background: var(--primary-bg);
+      width: 2rem;
+      aspect-ratio: 1/1;
+      border-radius: 1rem;
+      z-index: 20;
+      transition: all 0.2s ease-in-out;
+      &.disabled {
+        filter: brightness(0.8);
+        pointer-events: none;
+      }
+    }
+
+    .next {
+      right: 0;
+      transform: translate(100%, -50%);
+    }
+    .prev {
+      left: 0;
+      transform: translate(-100%, -50%);
+    }
+
+    .gallery-wrapper {
+      /*padding-top: 1%;
+      padding-left: 1%;
+      padding-bottom: 1%; */
+      overflow: hidden;
+      height: 100%;
+
+      .image-gallery {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: var(--gap);
+        height: 100%;
+        padding: 0rem 0;
+        transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        .item-wrapper {
+          width: var(--width);
+          height: fit-content;
+          overflow: hidden;
+          transition: all 0.2s ease-in-out;
+          border: 1px solid var(--border-color);
+          border-radius: 0.7rem;
+
+          &:hover {
+            transform: scale(1.01);
+          }
+        }
+
+        .image-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--border-color);
+          width: var(--width);
+          height: var(--width);
+          min-width: var(--width);
+          min-height: var(--width);
+          border-radius: 1.5rem;
+          overflow: hidden;
+          &:hover .slideshow-image {
+            transform: scale(1.05);
+          }
+
+          .slideshow-image {
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+            aspect-ratio: 1/1;
+          }
+        }
+      }
+    }
+  }
+}

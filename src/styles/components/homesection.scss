@@ -5,14 +5,18 @@ $backgr-shape-c-long: linear-gradient(90deg, #edf4f8, #d3d4d5);
 $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
 
 .section-home {
-    padding-top: 90px;
+    height: 100vh;
+    padding: 0 4rem;
+    padding-bottom: 5rem;
     position: static;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: grey;
+    display: flex;
     text-align: left;
+    align-items: flex-end;
 
     .shapes {
         z-index: -2;
@@ -396,12 +400,6 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
 
     .container {
 
-        max-width: 1350px;
-        position: static;
-        margin: 0 auto;
-        padding: 90px 0 90px;
-        height: auto;
-
         .row {
             max-width: 1350px;
             position: relative;
@@ -590,13 +588,14 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
             }
 
             .Highlighter {
-                color: #189cbd;
+                color: rgb(83, 194, 222);
                 animation: Highlighter 1.5s ease forwards;
                 -webkit-animation-delay: .2s;
                 /* Chrome, Safari, Opera */
                 animation-delay: .2s;
                 transform: translateX(-25vh);
                 opacity: 0;
+                cursor: none;
             }
 
             @keyframes Highlighter {
@@ -616,7 +615,9 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
             .Highlighter:hover {
                 cursor: pointer;
             }
-
+.title{
+    text-transform: uppercase;
+}
             .bold {
                 font-weight: bold;
             }
@@ -642,7 +643,6 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
 
             .column-r {
                 z-index: -1;
-                max-height: 517px;
                 position: relative;
 
 
@@ -669,7 +669,7 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
                 .f-size {
                     font-size: 18px;
                     width: 85%;
-
+margin: 0;
                 }
 
                 .description {

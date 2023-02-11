@@ -135,11 +135,11 @@ const homesection = () => {
       <div className="container" id="home-section">
         <div className="row">
           <div className="column-r width-a">
-            <p className="border-radius padding span bold toggle">
+            {/* <p className="border-radius padding span bold toggle">
               <span className="Highlighter" ><FontAwesomeIcon icon={faLightbulb} />
                 Awesome</span> Landing Page
-            </p>
-            <p></p> <h1 className="bold">Minteeble</h1>
+            </p> */}
+            <h1 className="title bold">Minteeble</h1>
             <p className="Highlighter f-size bold"> <Type /> </p>
             <p className="f-size description" >Build your own awesome Web3
               applications and start exploring this new world. What are you
@@ -155,7 +155,7 @@ const homesection = () => {
 
 
           </div>
-          <div className="column-r width-b">
+          {/* <div className="column-r width-b">
             <div className="iphone14pro">
 
               <div className="screen">
@@ -168,7 +168,7 @@ const homesection = () => {
 
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
