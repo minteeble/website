@@ -8,16 +8,14 @@ const App = () => {
   const socials = { Discord: "#", Instagram: "#" };
 
   return (
-
-<>  
-
-   <BrowserRouter>
+    <>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Portfolio" element={<Portfolio />}></Route>
         </Routes>
       </BrowserRouter>
-      </> 
+    </>
   );
 };
 
