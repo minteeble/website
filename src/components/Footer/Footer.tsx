@@ -32,10 +32,10 @@ const Footer = () => {
             <div className="top">Follow us</div>
             <div className="text ">
               <ul className="decoration">
-                <li><a href=""><FontAwesomeIcon className="socials instagram" icon={faInstagram} /> <span className="span hover-i">Instagram</span></a></li>
-                <li><a href="https://twitter.com/minteeble"><FontAwesomeIcon className="socials twitter" icon={faTwitter} /><span className=" span hover-t">Twitter</span></a></li>
-                {/* <li><a href=""><FontAwesomeIcon className="socials" icon={faTiktok} /><span className="span hover-tk">TikTok</span></a></li> */}
-                <li><a href=""><FontAwesomeIcon className="socials youtube" icon={faYoutube} /><span className="span hover-y">Youtube</span></a></li>
+                <li><a href=""><FontAwesomeIcon className="socials instagram" icon={faInstagram} /> <span className="padding-left span hover-i">Instagram</span></a></li>
+                <li><a href="https://twitter.com/minteeble"><FontAwesomeIcon className="socials twitter" icon={faTwitter} /><span className="padding-left span hover-t">Twitter</span></a></li>
+                {/* <li><a href=""><FontAwesomeIcon className="socials" icon={faTiktok} /><span className="padding-left span hover-tk">TikTok</span></a></li> */}
+                <li><a href=""><FontAwesomeIcon className="socials youtube" icon={faYoutube} /><span className="padding-left span hover-y">Youtube</span></a></li>
               </ul>
             </div>
           </div>

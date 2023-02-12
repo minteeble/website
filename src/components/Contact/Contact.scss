@@ -74,7 +74,11 @@
  .cta{
   margin-top: 4rem;
   background: #189cbd;
-
+  &:hover {
+    background-color: #48b4d0e0;
+    box-shadow: 8px 12px 20px -3px rgba(15, 125, 161, 0.56),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
  }
 }
 .cta {
@@ -93,8 +97,6 @@
   &:hover {
     scale: 1.1;
     font-size: 0.8rem;
-    background-color: #48b4d0e0;
-    box-shadow: 8px 12px 20px -3px rgba(15, 125, 161, 0.56),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
   }
 }
