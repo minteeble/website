@@ -63,7 +63,8 @@ const Home = () => {
       <Expertise></Expertise>
 
       <Contracts />
-      <div className="container-project">
+
+      {/* <div className="container-project">
         <div className="main">
           <div className="title">
             Projects that have worked with our libraries
@@ -113,7 +114,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="slideshow wrapper">
         <SlideShow
@@ -259,11 +260,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
- */}
-  
+        </section> */}
 
-      <Staytunned />
       <Contact />
     </>
   );

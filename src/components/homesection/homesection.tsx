@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Type from "../Type";
 import { faEthereum, faInstagram, faTiktok, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { Button } from "@minteeble/ui-components";
 
 
 const homesection = () => {
@@ -154,6 +155,7 @@ const homesection = () => {
               <form className="margin-right" action="#features"><button className="b-decoration a-decoration b-backgr-color">
                 Know more  <FontAwesomeIcon icon={faChevronDown} />
               </button></form>
+              <Button text={""}></Button>
               {/* <form action="Portfolio#website" ><button className="b-decoration a-decoration a-backgr-color">
                 Our Portfolio  <FontAwesomeIcon icon={faDiagramProject} />
               </button></form> */}
