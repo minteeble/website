@@ -1,31 +1,36 @@
-.card-wrappers{
+.servicesCard-wrapper{
     background-color: rgb(15 33 49);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
 
-    .card-head{
+    .servicesCard-head{
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
-        padding-top: 4rem;
         flex: 1 1 0%;
         
-        .card-square{
+        .servicesCard-square{
+            color: white;
             padding: 1.25rem;
-            background-color: rgb(255 222 1);
+            background-color: #189cbd;
             border-radius: 0.75rem;
-            position: absolute;
-            top: 0px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            transform: translateY(-50%);
         }
 
-        .card-title{
+        .servicesCard-title{
             color: rgb(243 244 246);
             font-weight: 500;
             font-size: 1.25rem;
             line-height: 1.75rem;
         }
-        .card-content{
+        .servicesCard-content{
             color: rgb(209 213 219);
             font-size: 1rem;
             line-height: 1.5rem;
@@ -34,7 +39,7 @@
         }
     }
 
-    .card-foot{
+    .servicesCard-foot{
     padding-left: 2rem;
     padding-right: 2rem;
     padding: 1.5rem;
@@ -42,9 +47,9 @@
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
 
-    .card-contact{
+    .servicesCard-contact{
 
-    color: rgb(255 222 13);
+    color: #189cbd;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -53,9 +58,11 @@
     padding-left: 1rem;
     padding-right: 1rem;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 
-    .card-arrow{
-        color: rgb(255 222 13);
+    .servicesCard-arrow{
+        color: #189cbd;
         font-weight: 700;
         font-size: 1rem;
         line-height: 1.5rem;

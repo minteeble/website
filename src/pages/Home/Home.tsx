@@ -35,6 +35,7 @@ import Contracts from "../../components/contracts";
 import { Sidetab } from "@typeform/embed-react";
 import SlideShow, { SlideShowType } from "../../components/SlideShow";
 import Review from "../../components/Review";
+import ServicesCard from "../../components/ServicesCard";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -259,6 +260,39 @@ const Home = () => {
           <div className="ser-container">
             <div className="ser-heading">
               <h2 className="ser-heading-text" id="services">Services</h2>
+              <p className="ser-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div className="ser-cards">
+              <ServicesCard 
+              title={"Title 1"}
+              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
+              icon={"x"}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Title 2"}
+              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
+              icon={"x"}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Title 3"}
+              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
+              icon={"x"}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Title 4"}
+              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
+              icon={"x"}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Title 5"}
+              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
+              icon={"x"}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Title 6"}
+              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
+              icon={"x"}
+              ></ServicesCard>
             </div>
           </div>
         </section>
