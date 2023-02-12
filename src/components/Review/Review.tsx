@@ -10,11 +10,9 @@ const Review = (props: ReviewProps) => {
           <img src={props.avatar} alt="" className="avatar" />
         </div>
         <div className="name">{props.name}</div>
-        <div className="job">{props.job}</div>
-        <div className="review-body">
-          <FontAwesomeIcon icon={faQuoteLeft} className={"quotes"} />
-
-          {props.reviewBody}
+        <div className="country">
+          <img src={props.flag} alt="" className="flag" />
+          {props.country}
         </div>
         <div className="rate">
           <span>⭐</span>
@@ -22,6 +20,11 @@ const Review = (props: ReviewProps) => {
           <span>⭐</span>
           <span>⭐</span>
           <span>⭐</span>
+        </div>
+        <div className="review-body">
+          <FontAwesomeIcon icon={faQuoteLeft} className={"quotes"} />
+
+          {props.reviewBody}
         </div>
       </div>
     </>
