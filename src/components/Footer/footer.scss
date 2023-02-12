@@ -1,6 +1,6 @@
 $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
 
-.footer {
+footer {
   width: 100%;
   bottom: 0;
   position: relative;
@@ -78,9 +78,11 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
       .decoration {
         list-style: none;
         padding: 0;
-
+span{
+  padding-left:10px;
+  ;
+}
         .socials {
-          padding-right: 10px;
           font-size: 20px;
         }
 
@@ -157,18 +159,31 @@ $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
       margin-bottom: 30px;
     }
     
-      .hover-i:hover{
-color: #c13584;
+    a:hover{
+      .hover-i{
+        -webkit-text-fill-color: transparent; 
+        background:  conic-gradient(from 180deg at 50.73% 50%, #FDC367 0deg, #E1316D 43.39deg, #D02E90 90deg, #9938BD 136.88deg, #6359C9 181.87deg, #515DD1 224.65deg, #BE407B 271.87deg, #FDBB54 315.52deg, #FDC367 360deg);  
+        background-clip: text;  
+        -webkit-background-clip: text;
       }
-            .hover-y:hover{
-              color: red;
-            }
-                        .hover-tk:hover{
-                          color:#e1306c;
-                        }
-                                                .hover-t:hover{
-                                                  color:#405de6;
-                                                }
+      .hover-y{
+        color:#e1306c;
+      }
+      .hover-t{
+        color:#405de6;
+      }
+      .youtube{
+        color:#e1306c;
+      }
+      .twitter{
+        color:#405de6;
+      }
+      .instagram{
+        border-radius: 5px;
+        background:  conic-gradient(from 180deg at 50.73% 50%, #FDC367 0deg, #E1316D 43.39deg, #D02E90 90deg, #9938BD 136.88deg, #6359C9 181.87deg, #515DD1 224.65deg, #BE407B 271.87deg, #FDBB54 315.52deg, #FDC367 360deg);  
+      }
+    }
+    
 
       
 

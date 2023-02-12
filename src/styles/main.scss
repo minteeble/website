@@ -8,21 +8,28 @@
 
 @import "./../../node_modules/@minteeble/ui-components/dist/css/style.css";
 // @import "/node_modules/@minteeble/ui-components/src/styles/main.scss";
-@import "../components/Navbar/navbar.scss";
+
+//pages
 @import "../pages/Home/Home.scss";
+@import "../pages/Portfolio/Portfolio.scss";
+
+//General
+@import "../components/Navbar/navbar.scss";
+@import "../components/footer/footer.scss";
+
 @import "../components/homesection/homesection.scss";
 @import "../components/features/features.scss";
 @import "../components/contracts/contracts.scss";
 @import "../components/reviewsection/reviewsection.scss";
-@import "../components/staytunnedsection/staytunnedsection.scss";
-@import "../components/footer/footer.scss";
-@import "../components/portfoliosection/portfoliosection.scss";
-@import "../components/featuresportfolio/featuresportfolio.scss";
+@import "../components/staytunedsection/staytunedsection.scss";
 @import "../components/mintingdapp/mintingdapp.scss";
-@import "../components/popup/popup.scss";
-@import "../components/games/games.scss";
 @import "../components/SlideShow/SlideShow.scss";
 @import "../components/Review/Review.scss";
+@import "../components/Popup/popup.scss";
+@import "../components/Contact/Contact.scss";
 @import "../components/ServicesCard/servicesCard.scss";
 
-
+//Portfolio
+@import "../components/PortoflioComponents/games/games.scss";
+@import "../components/PortoflioComponents/portfoliosection/portfoliosection.scss";
+@import "../components/PortoflioComponents/featuresportfolio/featuresportfolio.scss";

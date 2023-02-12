@@ -1,0 +1,97 @@
+.popup-wrapper {
+  z-index: 999;
+  .popup {
+    background-color: unset;
+    box-shadow: none;
+  }
+}
+
+.form-wrapper {
+  width: 30rem;
+  height: 70vh;
+  border: 2px solid var(--border-color);
+  border-radius: 1rem;
+  margin-top: 4rem;
+  overflow: hidden;
+  background: var(--secondary-bg);
+
+  .form-header {
+    width: 100%;
+    background: var(--secondary-bg);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+    .close {
+      cursor: pointer;
+      opacity: 0.5;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.contact {
+  background: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1154px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.425) !important;
+  margin-bottom: 5rem;
+  .title {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  .sub-text {
+    color: var(--primary-color);
+    font-weight: 100;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 7rem;
+      height: 0.3rem;
+      border-radius: 2px;
+      background: var(--primary-color);
+    }
+  }
+  .cta {
+    margin-top: 4rem;
+    border: none;
+    background: #189cbd;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4rem;
+    width: 10rem;
+    text-decoration: none;
+    letter-spacing: 1.45px;
+    font-weight: 400;
+    transition: 0.5s ease;
+    cursor: pointer;
+    line-height: 1.5;
+    height: 45px;
+    &:hover {
+      scale: 1.1;
+      font-size: 0.8rem;
+      background-color: #48b4d0e0;
+      box-shadow: 8px 12px 20px -3px rgba(15, 125, 161, 0.56),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+}

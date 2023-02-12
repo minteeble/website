@@ -13,8 +13,7 @@ const features = () => {
       <div className="container">
         <div className="heading">
           <h2 id="features" className="heading-text">
-            Premium Features
-
+Services
           </h2>
           <h4>Our contracts are unique and complex</h4>
           <p>As web3 enthusiasts, our main focus is on pairing the power of decentralization with all the most relayable and professional technologies.</p>

@@ -1,8 +1,7 @@
 .slideshow-container {
-  margin: auto;
+  margin: 0 auto;
   /*padding: 0 1.5rem; */
-  width: fit-content;
-  padding: 5rem 0;
+  width: 70%;
 
   &:hover .slideshow .prev,
   &:hover .slideshow .next {
@@ -11,10 +10,10 @@
   }
 
   &:hover .slideshow .prev {
-    transform: translate(-320%, -50%);
+    transform: translate(-100%, -50%);
   }
   &:hover .slideshow .next {
-    transform: translate(320%, -50%);
+    transform: translate(100%, -50%);
   }
   .slideshow {
     position: relative;
@@ -26,23 +25,25 @@
     align-items: center;
     justify-content: flex-start;
     margin: 0 auto;
+    padding: 2rem 0;
 
     .next,
     .prev {
       opacity: 0;
       // pointer-events: none;
       position: absolute;
-      top: -3rem;
-      background: none;
+
+      top: 50%;
       border: none;
-      font-size: 1.5rem;
       cursor: pointer;
+      background: none;
       width: 2rem;
       aspect-ratio: 1/1;
       border-radius: 1rem;
+      font-size: 2rem;
+      color: white;
       z-index: 20;
       transition: all 0.2s ease-in-out;
-      color: white;
       &.disabled {
         filter: brightness(0.8);
         pointer-events: none;
@@ -50,11 +51,11 @@
     }
 
     .next {
-      right: 50%;
+      right: 0;
       transform: translate(100%, -50%);
     }
     .prev {
-      left: 50%;
+      left: 0;
       transform: translate(-100%, -50%);
     }
 

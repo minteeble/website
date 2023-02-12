@@ -7,7 +7,7 @@ import ReactPlayer from 'react-player'
 // @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Type from "../Type";
+import Type from "../../Type";
 import { faEthereum } from "@fortawesome/free-brands-svg-icons";
 import Typeportfolio from "../typeportfolio";
 

@@ -3,35 +3,13 @@ html {
 
 
 
-    .top {
-        a {
-            font-weight: bold;
-            color: #FFFFFF;
-            opacity: 0.8;
-            text-decoration-line: none;
-            transition: all 0.5s ease;
-            text-decoration-color: #58d6c1;
-
-        }
-
-        a:hover {
-            scale: calc(1.1);
-            transition: all .5s ease;
-            opacity: 1;
-            text-decoration-line: underline;
-            text-decoration-color: #58d6c1;
-            text-decoration-style: solid;
-            text-decoration-thickness: 3px;
-        }
 
 
-    }
-
-    body {
-        background-color: #212121;
-        font-family: 'Roboto', sans-serif;
-        margin: 0px
-    }
+body {
+    background-color: #212121;
+    font-family: 'Roboto', sans-serif;
+    margin:0px
+}
 
     .blue {
         color: #53C2DE;

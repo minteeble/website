@@ -10,7 +10,7 @@ const Footer = () => {
   const [email, setEmail] = useState<string>("");
 
   return (
-    <footer className="footer" id="contact">
+    <footer className="" id="contact">
       <div className="footer-cont">
         <div className="row">
           <div className="a-colum-ft padding">
@@ -32,10 +32,10 @@ const Footer = () => {
             <div className="top">Follow us</div>
             <div className="text ">
               <ul className="decoration">
-                <li><a href=""><span className="span hover-i"><FontAwesomeIcon className="socials" icon={faInstagram} />Instagram</span></a></li>
-                <li><a href="https://twitter.com/minteeble"><span className=" span hover-t"><FontAwesomeIcon className="socials" icon={faTwitter} />Twitter</span></a></li>
-                <li><a href=""><span className="span hover-tk"><FontAwesomeIcon className="socials" icon={faTiktok} />TikTok</span></a></li>
-                <li><a href=""><span className="span hover-y"><FontAwesomeIcon className="socials" icon={faYoutube} />Youtube</span></a></li>
+                <li><a href=""><FontAwesomeIcon className="socials instagram" icon={faInstagram} /> <span className="span hover-i">Instagram</span></a></li>
+                <li><a href="https://twitter.com/minteeble"><FontAwesomeIcon className="socials twitter" icon={faTwitter} /><span className=" span hover-t">Twitter</span></a></li>
+                {/* <li><a href=""><FontAwesomeIcon className="socials" icon={faTiktok} /><span className="span hover-tk">TikTok</span></a></li> */}
+                <li><a href=""><FontAwesomeIcon className="socials youtube" icon={faYoutube} /><span className="span hover-y">Youtube</span></a></li>
               </ul>
             </div>
           </div>

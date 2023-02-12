@@ -17,7 +17,33 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
     display: flex;
     text-align: left;
     align-items: flex-end;
+// @media screen and (max-width:650px) {
+//     padding: 0 0.5rem;
+// }
+    .socials-row{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        .icon-size{
+font-size: 1.4rem;
 
+        }
+        .instagram:hover{
+            border-radius: 6px;
+            background-clip: text;  
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            background:  conic-gradient(from 180deg at 50.73% 50%, #FDC367 0deg, #E1316D 43.39deg, #D02E90 90deg, #9938BD 136.88deg, #6359C9 181.87deg, #515DD1 224.65deg, #BE407B 271.87deg, #FDBB54 315.52deg, #FDC367 360deg);  
+
+        
+        }
+        .youtube:hover{
+            color: #ff0000;
+        }
+        .twitter:hover{
+            color: #1a98e4;
+        }
+    }
     .shapes {
         z-index: -2;
         position: absolute;
@@ -399,10 +425,9 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
     }
 
     .container {
-
+width: 100%;
         .row {
-            max-width: 1350px;
-            position: relative;
+width: 100%;            position: relative;
             z-index: 0;
             display: flex;
             flex-direction: row;
@@ -433,7 +458,7 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
 
             }
 
-            .nav {
+            .button-cont {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap!important;
@@ -650,7 +675,7 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
                     line-height: 1;
                     font-size: 88px;
                     margin: 0 0;
-                    color: #189cbd;
+                    color: #53c2de;
                     animation: column-r-h1 1.5s ease forwards;
                 }
 
