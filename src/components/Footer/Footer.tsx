@@ -95,7 +95,7 @@ const Footer = () => {
                         className="socials instagram"
                         icon={faInstagram}
                       />{" "}
-                      <span className="span hover-i">Instagram</span>
+                      <span className="padding-left span hover-i">Instagram</span>
                     </a>
                   </li>
                   <li>
@@ -104,7 +104,7 @@ const Footer = () => {
                         className="socials twitter"
                         icon={faTwitter}
                       />
-                      <span className=" span hover-t">Twitter</span>
+                      <span className="padding-left span hover-t">Twitter</span>
                     </a>
                   </li>
                   {/* <li><a href=""><FontAwesomeIcon className="socials" icon={faTiktok} /><span className="span hover-tk">TikTok</span></a></li> */}
@@ -114,7 +114,7 @@ const Footer = () => {
                         className="socials youtube"
                         icon={faYoutube}
                       />
-                      <span className="span hover-y">Youtube</span>
+                      <span className="padding-left span hover-y">Youtube</span>
                     </a>
                   </li>
                 </ul>

@@ -5,82 +5,17 @@
   width: 100%;
 
   .minte-custom {
-    img {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  .b-decoration {
-    border: none;
-    text-transform: uppercase;
-    border-radius: 40px;
-    color: #fff;
-    align-items: center;
+    max-width: 25px;
     display: flex;
-    justify-content: space-around;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    width: 228px;
-    transition: 0.4s ease;
-    height: 59px;
-  }
-
-  .b-backgr-color {
-    background-color: #189cbd;
-    color: white;
-    border: 1px solid #189cbd;
-    margin-right: 7%;
-    animation: b-backgr 1.5s ease forwards;
-    transform: translateY(3vh);
-  }
-
-  @keyframes b-backgr {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      transform: translateY(0vh);
+    align-items: center;
+    justify-content: center;
+    img {
+     width: 100%;
     }
   }
 
-  .b-backgr-color:hover {
-    scale: calc(1.1);
-
-    background-color: #195e6fe0;
-    box-shadow: 8px 12px 20px -3px rgb(15 125 161 / 56%),
-      0 17px 50px 0 rgb(0 0 0 / 19%);
-    transition: 0.5s ease;
-  }
-
-  .a-backgr-color {
-    background-color: white;
-    color: #189cbd;
-    border: 1px solid #189cbd;
-    animation: a-backgr 1.5s ease forwards;
-    transform: translateY(3vh);
-  }
-
-  @keyframes a-backgr {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      transform: translateY(0vh);
-    }
-  }
-
-  .a-backgr-color:hover {
-    scale: calc(1.1);
-    font-size: 0.8rem;
-    background-color: rgba(255, 255, 255, 0.878);
-    box-shadow: 8px 12px 20px -3px rgb(15 125 161 / 56%),
-      0 17px 50px 0 rgb(0 0 0 / 19%);
-    transition: 0.5s ease;
+  .cta{
+    width: 14rem;
   }
   .container {
     margin: 0 auto;

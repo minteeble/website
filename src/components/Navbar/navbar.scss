@@ -1,6 +1,6 @@
 
 nav {
-
+ 
     min-height: 90px;
     right: 0;
     left: 0;
@@ -170,15 +170,7 @@ nav {
 
 
   
-    a:hover {
-      scale: calc(1.1);
-             transition: all .5s ease;
-             opacity: 1;
-             text-decoration-line: underline;
-             text-decoration-color: #58d6c1;
-             text-decoration-style: solid;
-             text-decoration-thickness: 3px;
-         }
+
         }
 
   .fixed {
@@ -189,15 +181,25 @@ nav {
     margin-right: 7px;
   }
 
-    a {
-        font-weight: bold;
-        color: #FFFFFF;
-        opacity: 0.8;
-        text-decoration-line: none;
-        transition: all 0.5s ease;
-        text-decoration-color: #58d6c1;
-        
-    }
+  .nav-text, .servicesCard-contact {
+    font-weight: bold;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-decoration-line: none;
+    transition: all 0.5s ease;
+    text-decoration-color: #58d6c1; 
+&:hover{
+  
+    scale: calc(1.1);
+           transition: all .5s ease;
+           opacity: 1;
+           text-decoration-line: underline;
+           text-decoration-color: #58d6c1;
+           text-decoration-style: solid;
+           text-decoration-thickness: 3px;
+}
+}
+   
 
    
 

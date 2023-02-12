@@ -18,19 +18,19 @@ const Expertise = () => {
               <div className="exp-jobs exp-sect">
                 <h4 className="sect-number">+200</h4>
                 <p className="sect-text">Jobs completed</p>
-                <a href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" className="sect-button">Get in touch</a>
+                <a href="https://wy7qp680aox.typeform.com/to/WpoqqxS5">Get in touch</a>
               </div>
               <div className="exp-smart exp-sect">
 
               <h4 className="sect-number">+100</h4>
                 <p className="sect-text">Smart contracts written</p>
-                <a href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" className="sect-button">Request smart contract</a>
+                <a href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" >Request smart contract</a>
               </div>
               <div className="exp-req exp-sect">
 
               <h4 className="sect-number">+150</h4>
                 <p className="sect-text">NFT collection launched</p>
-                <a href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" className="sect-button">Request NFT collection</a>
+                <a href="https://wy7qp680aox.typeform.com/to/WpoqqxS5">Request NFT collection</a>
               </div>
             </div>
           </div>
