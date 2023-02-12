@@ -1,10 +1,6 @@
 .services {
     .ser-container {
-        margin: 0 auto;
-        height: auto;
-        padding: 90px 0 90px;
-        max-width: 1140px;
-
+    
         .ser-heading {
             text-align: center;
             margin-bottom: 84px;
@@ -40,9 +36,6 @@
         .ser-cards {
             margin-left: auto;
             margin-right: auto;
-            max-width: 80rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
             display: grid;
             column-gap: 2.5rem;
             row-gap: 3.8rem;

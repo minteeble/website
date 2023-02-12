@@ -1,3 +1,3 @@
-import reviewsection from "./reviewsection";
+import ReviewSection from "./ReviewSection";
 
-export default reviewsection;
+export default ReviewSection;

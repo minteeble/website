@@ -106,11 +106,11 @@ $circle: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
 
     .container-as {
         margin: 0 auto;
-        max-width: 1140px;
-        height: auto;
+width: 90%;       
+ height: auto;
+ display: flex;
 
         .row {
-            max-width: 1140px;
             position: relative;
             z-index: 0;
             display: flex;

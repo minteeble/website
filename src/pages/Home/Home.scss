@@ -461,12 +461,64 @@ html {
         /* border-radius: 15px;*/
         clip-path: circle(40%);
 
-        img[src="/build/images/user1.webp"] {
-          padding-top: 13px;
-          width: 267px;
-          height: auto;
-          margin: 0px -20px;
-          /*display:block;
+            .container-team {
+                margin: 3rem;
+                width: 230px;
+                height: 330px;
+            }
+
+            .team-grid:hover {
+                box-shadow: 8px 12px 20px -3px rgb(15 125 161 / 56%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+                scale: calc(1.1);
+                transition: all .5s ease;
+            }
+
+            .team-grid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 230px;
+                height: 385px;
+                text-align: center;
+                color: #FFFFFF;
+                border-inline: solid;
+                border-color: #189cbd;
+
+                .content {
+                    font-family: 'Roboto', sans-serif;
+                    width: 80%;
+
+                    h4 {
+                        font-size: 30px;
+                        margin: 10px;
+                        letter-spacing: .03em;
+                        font-style: italic;
+                        color: #189cbd;
+                        cursor: normal;
+                    }
+
+                    span {
+                        font-style: italic;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            /*CARD IMAGE*/
+
+            .cropper {
+                width: 230px;
+                height: 200px;
+                overflow: hidden;
+                /* border-radius: 15px;*/
+                clip-path: circle(40%);
+
+                img[src="/build/images/user1.webp"] {
+                    padding-top: 13px;
+                    width: 267px;
+                    height: auto;
+                    margin: 0px -20px;
+                    /*display:block;
                 text-align:center;*/
         }
 
@@ -587,5 +639,13 @@ html {
         }
       }
     }
+
+}
+
   }
+  .container, .ser-container, .exp-container, .slideshow-container{
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+}
 }
