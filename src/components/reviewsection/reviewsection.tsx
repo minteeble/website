@@ -31,65 +31,7 @@ const ReviewSection = () => {
               <p className="p-margin">Over time we have created many projects and all our customers have always been satisfied with our work.</p>
             </div>
             
-            {/* <div className="slideshow wrapper">
-        <SlideShow
-          type={SlideShowType.Infinite}
-          autoScroll
-          displayItems={3}
-          itemWidth={20}
-          gap={5}
-          items={[
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-          ]}
-        />
-      </div> */}
+           
           </div>
           
 
