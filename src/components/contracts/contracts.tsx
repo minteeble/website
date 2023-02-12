@@ -21,7 +21,7 @@ Minteeble Contracts helps you minimize risk by using battle-tested libraries of 
         </div>
         <div className="row">
         <form className="margin-right" action="#features"><button className="bg-white cta flex-display">
-                Download Libraries  <div className="minte-custom"><img src="/build/images/logo.webp" alt="" /> </div>
+                Minteeble Libraries  <div className="minte-custom"><img src="/build/images/logo.webp" alt="" /> </div>
               </button></form>
         </div>
       </div>

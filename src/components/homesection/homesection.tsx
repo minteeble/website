@@ -150,7 +150,7 @@ const homesection = () => {
           </div>
         </div>
       </div>
-      <div className="container" id="home-section">
+      <div className="container-width" id="home-section">
         <div className="row">
           <div className="column-r width-a">
             {/* <p className="border-radius padding span bold toggle">

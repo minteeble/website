@@ -440,7 +440,7 @@ body {
             flex-wrap: wrap;
 
 
-            .container {
+            .container-team {
                 margin: 3rem;
                 width: 230px;
                 height: 330px;
@@ -640,4 +640,9 @@ body {
 
     }
 
+}
+.container, .ser-container, .exp-container, .slideshow-container{
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
 }

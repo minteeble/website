@@ -1240,10 +1240,10 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@minteeble/ui-components@^1.0.45":
-  version "1.0.45"
-  resolved "https://registry.yarnpkg.com/@minteeble/ui-components/-/ui-components-1.0.45.tgz#0c54fa433fda91a6fb49cd42f1088e9d0b764451"
-  integrity sha512-0gQ4Gq4RwmWXzc+rVypGAdX3lbFqc3yQGaxlhrlxlqwuihcAeJqHKboRfgHRKfVFn7pGIIT1bE6RlZtWJ0b0gQ==
+"@minteeble/ui-components@^1.0.46":
+  version "1.0.46"
+  resolved "https://registry.yarnpkg.com/@minteeble/ui-components/-/ui-components-1.0.46.tgz#e920df736d72cad7aa58a3d40f6e3ecf6bf5e770"
+  integrity sha512-NDzIhejj3ieV/9u8fdaqvMf26fSGKQcPCywW+gsrRIry94DzWN0F7YB36Dik1wRJdBRiiTKwmw1DYkslUW5/NQ==
   dependencies:
     react-responsive-combo-box "^1.3.0"
     sass-loader "10.0.0"

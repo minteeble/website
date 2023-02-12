@@ -30,7 +30,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import Features from "../../components/features";
-import Asection from "../../components/reviewsection";
+import Asection from "../../components/ReviewSection";
 import Staytunned from "../../components/staytunedsection";
 import Footer from "../../components/Footer";
 import Sectionhome from "../../components/homesection";
@@ -42,6 +42,7 @@ import Contact from "../../components/Contact";
 import ServicesCard from "../../components/ServicesCard";
 import Services from "../../components/Services";
 import Expertise from "../../components/Expertise";
+import ReviewSection from "../../components/ReviewSection";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");
@@ -113,8 +114,7 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-
-      <div className="slideshow wrapper">
+ <div className="slideshow wrapper">
         <SlideShow
           type={SlideShowType.Infinite}
           autoScroll
@@ -173,6 +173,7 @@ const Home = () => {
           ]}
         />
       </div>
+<ReviewSection></ReviewSection>
 
       {/* <section className="team-section" id="team-section">
           <div className="section-heading">
@@ -187,7 +188,7 @@ const Home = () => {
             </p>
           </div>
           <div className="row-grid">
-            <div className="container" data-aos="fade-up">
+            <div className="container-team" data-aos="fade-up">
               <div className="team-grid">
                //<div className="thumbnail"><img src="/build/images/doggeshiba.png" alt="Dogge1"/></div>
                 <div className="cropper">
