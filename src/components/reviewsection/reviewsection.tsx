@@ -1,13 +1,21 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faBars, faDiamond, faGem, faHandsBubbles, faLightbulb, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faBars,
+  faDiamond,
+  faGem,
+  faHandsBubbles,
+  faLightbulb,
+  faScrewdriverWrench,
+} from "@fortawesome/free-solid-svg-icons";
 import SlideShow, { SlideShowType } from "../SlideShow";
 import Review from "../Review";
+import review from "./../../../review.json";
 
 // @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 
 const ReviewSection = () => {
   return (
@@ -25,79 +33,43 @@ const ReviewSection = () => {
         <div className="row">
           <div className="column-as">
             <div className="section-heading">
-              <h2 className="after">What our customers think of us
-
-              </h2>
-              <p className="p-margin">Over time we have created many projects and all our customers have always been satisfied with our work.</p>
+              <h2 className="after">What our customers think of us</h2>
+              <p className="p-margin">
+                Over time we have created many projects and all our customers
+                have always been satisfied with our work.
+              </p>
             </div>
-            
-            {/* <div className="slideshow wrapper">
-        <SlideShow
-          type={SlideShowType.Infinite}
-          autoScroll
-          displayItems={3}
-          itemWidth={20}
-          gap={5}
-          items={[
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-          ]}
-        />
-      </div> */}
           </div>
-          
-
+          <div className="slideshow-wrapper">
+            <SlideShow
+              type={SlideShowType.Infinite}
+              autoScroll
+              displayItems={3}
+              itemWidth={22}
+              autoScrollDelay={10000}
+              gap={5}
+              items={review.map((review, i) => {
+                return (
+                  <Review
+                    key={i}
+                    avatar={
+                      review.avatar
+                        ? `/build/images/review/${review.name}.webp`
+                        : "/build/images/review/user.svg"
+                    }
+                    flag={review.flag}
+                    name={review.name}
+                    country={review.country}
+                    reviewBody={review.body}
+                  />
+                );
+              })}
+            />
+          </div>
         </div>
       </div>
     </section>
-  )
-}
-
+  );
+};
 
 export default ReviewSection;
