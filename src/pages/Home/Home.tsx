@@ -132,6 +132,7 @@ const Home = () => {
                     ? `/build/images/review/${review.name}.webp`
                     : "/build/images/review/user.svg"
                 }
+                flag={review.flag}
                 name={review.name}
                 country={review.country}
                 reviewBody={review.body}
