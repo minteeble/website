@@ -8,7 +8,6 @@ import Navbar from "../../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import review from "./../../../review.json";
 
 // @ts-ignore
 import { loadFull } from "tsparticles";
@@ -116,8 +115,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      
-<ReviewSection></ReviewSection>
+      <ReviewSection></ReviewSection>
 
       {/* <section className="team-section" id="team-section">
           <div className="section-heading">

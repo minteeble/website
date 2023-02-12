@@ -1,6 +1,6 @@
 .services {
     .exp-container {
-     
+
         .exp-heading {
             text-align: center;
             margin-bottom: 84px;
@@ -22,12 +22,13 @@
                     background-color: #189cbd;
                 }
             }
-            .exp-h4{
+
+            .exp-h4 {
                 font-size: 35px;
                 margin-bottom: 1.7rem;
                 color: #199bbc;
                 text-align: center;
-                
+
             }
 
             .exp-text {
@@ -35,21 +36,33 @@
                 font-size: 21px;
                 margin: 1rem 2rem;
                 text-align: center;
-                color:gray;
+                color: gray;
 
             }
         }
 
         .exp-cards {
-            border: #189cbd 4px solid;
+            border: #189cbd 1px solid;
             border-radius: 10px;
- display: grid;
+            display: grid;
             column-gap: 0rem;
-            grid-template-columns: repeat(3,minmax(0,1fr));
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             background-color: #191919;
             box-shadow: inset 0 0 0.2em 0 #189cbd, 0 0 0.2em 0 #189cbd;
 
-            .exp-sect{
+            @media screen  and (max-width: 920px) {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+
+                .exp-sect{
+                    &:not(:last-child) {
+                        border-bottom: #189cbd 1px solid;
+                        border-right: none !important;
+                    }
+                }
+                
+            }
+
+            .exp-sect {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -59,18 +72,18 @@
                 padding-bottom: 2rem;
 
                 &:not(:last-child) {
-                border-right: #189cbd 1px solid;
+                    border-right: #189cbd 1px solid;
                 }
 
-                .sect-number{
+                .sect-number {
                     font-size: 2.9rem;
                     color: #199bbc;
                     text-align: center;
                     text-shadow: 0 0 0.1em currentColor;
-                    
+
                 }
 
-                .sect-text{
+                .sect-text {
                     font-weight: 400;
                     font-size: 21px;
                     text-align: center;
@@ -78,12 +91,12 @@
 
                 }
 
-                .sect-button{
+                .sect-button {
                     background-color: white;
                     padding: 0.8rem;
                     border-radius: 6px;
                     text-decoration: none;
-                    color:#199bbc;
+                    color: #199bbc;
                 }
             }
         }
