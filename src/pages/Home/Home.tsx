@@ -251,8 +251,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section> */}
-
+        </section>
+ */}
         <section className="services">
           <div className="ser-container">
             <div className="ser-heading">
@@ -292,7 +292,7 @@ const Home = () => {
               ></ServicesCard>
             </div>
           </div>
-        </div>
+      
       </section>
 
       <Staytunned />
