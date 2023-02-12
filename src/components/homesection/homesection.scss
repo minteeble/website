@@ -460,7 +460,7 @@ width: 100%;            position: relative;
 
             .button-cont {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column-reverse;
                 flex-wrap: nowrap!important;
                 margin-top: 2rem;
                 justify-content: start;

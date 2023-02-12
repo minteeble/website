@@ -55,9 +55,7 @@ const Home = () => {
   return (
     <>
       <Sidetab id="WpoqqxS5" buttonText="click to open" />
-      <Sectionhome />
-      {/*deve essere un component*/}
-      
+      <Sectionhome />      
       <Services></Services>
 
       <Expertise></Expertise>

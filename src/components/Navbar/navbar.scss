@@ -169,7 +169,17 @@ nav {
     @media screen and (max-width: 1350px) {}
 
 
-  }
+  
+    a:hover {
+      scale: calc(1.1);
+             transition: all .5s ease;
+             opacity: 1;
+             text-decoration-line: underline;
+             text-decoration-color: #58d6c1;
+             text-decoration-style: solid;
+             text-decoration-thickness: 3px;
+         }
+        }
 
   .fixed {
     background-color: rgba(24, 23, 23, 0.801);
@@ -189,15 +199,7 @@ nav {
         
     }
 
-    a:hover {
- scale: calc(1.1);
-        transition: all .5s ease;
-        opacity: 1;
-        text-decoration-line: underline;
-        text-decoration-color: #58d6c1;
-        text-decoration-style: solid;
-        text-decoration-thickness: 3px;
-    }
+   
 
 
 
