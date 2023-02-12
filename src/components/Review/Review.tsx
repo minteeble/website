@@ -1,11 +1,19 @@
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReviewProps } from "./Review.types";
+// @ts-ignore
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Review = (props: ReviewProps) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
-      <div className="review">
+      <div className="review" data-aos="zoom-in">
         <div className="avatar-wrapper">
           <img src={props.avatar} alt="" className="avatar" />
         </div>

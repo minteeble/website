@@ -2,12 +2,16 @@ import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonActionType } from "@minteeble/ui-components";
 import { count } from "console";
-
-
+// @ts-ignore
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Expertise = () => {
-
   const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   function logit() {
     setScrollY(window.pageYOffset);
@@ -62,59 +66,86 @@ const Expertise = () => {
 
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
-    if(scrollY + window.innerHeight >=(ref.current?.offsetTop || 0)  && allowCounter){
-      counter(".dyn3",0,150,10000);
-      setTimeout(()=>{
-        counter(".dyn2",0,100,10000);
-        setTimeout(()=>{
-          counter(".dyn1",0,200,10000);
-
-        })
-      },100
-      )
+    if (
+      scrollY + window.innerHeight >= (ref.current?.offsetTop || 0) &&
+      allowCounter
+    ) {
+      counter(".dyn3", 0, 150, 10000);
+      setTimeout(() => {
+        counter(".dyn2", 0, 100, 10000);
+        setTimeout(() => {
+          counter(".dyn1", 0, 200, 10000);
+        });
+      }, 100);
       setAllowCounter(false);
     }
-  },[scrollY]);
-
-
+  }, [scrollY]);
 
   return (
     <>
-     <section className="services" id="features">
-          <div className="exp-container">
-            <div className="exp-heading">
-              <h2 className="exp-heading-text" id="services">Expertise</h2>
-              <h4 className="exp-h4">Trusted by over 130 clients</h4>
-              <p className="exp-text">
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+      <section className="services" id="features">
+        <div className="exp-container">
+          <div className="exp-heading">
+            <h2 className="exp-heading-text" id="services" data-aos="fade-up">
+              Expertise
+            </h2>
+            <h4 className="exp-h4" data-aos="fade-up">
+              Trusted by over 130 clients
+            </h4>
+            <p className="exp-text" data-aos="fade-up">
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div className="exp-cards">
+            <div className="exp-jobs exp-sect" data-aos="zoom-in">
+              <h4 className="sect-number">
+                +<span ref={ref} className="dyn1"></span>
+              </h4>
+              <p className="sect-text">Jobs completed</p>
+              <Button
+                text={"Get in touch"}
+                actionType={1}
+                url="https://wy7qp680aox.typeform.com/to/WpoqqxS5"
+              ></Button>
             </div>
-            <div className="exp-cards">
-              <div className="exp-jobs exp-sect">
-                <h4 className="sect-number">+<span ref={ref} className="dyn1"></span></h4>
-                <p className="sect-text">Jobs completed</p>
-                <Button text={"Get in touch"} actionType={1} url="https://wy7qp680aox.typeform.com/to/WpoqqxS5" ></Button>
-              </div>
-              <div className="exp-smart exp-sect">
-
-              <h4 className="sect-number">+<span className="dyn2"></span></h4>
-                <p className="sect-text">Smart contracts written</p>
-                <Button text={"Request smart contract"} actionType={ButtonActionType.Anchor} url="https://wy7qp680aox.typeform.com/to/WpoqqxS5" ></Button>
-                {/* <button href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" className="sect-button">Request smart contract</button> */}
-              </div>
-              <div className="exp-req exp-sect">
-
-              <h4 className="sect-number">+<span className="dyn3"></span></h4>
-                <p className="sect-text">NFT collection launched</p>
-                <Button text={"Request NFT collection"} actionType={ButtonActionType.Anchor} url="https://wy7qp680aox.typeform.com/to/WpoqqxS5" ></Button>
-                {/* <button href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" className="sect-button">Request NFT collection</button> */}
-              </div>
+            <div
+              className="exp-smart exp-sect"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <h4 className="sect-number">
+                +<span className="dyn2"></span>
+              </h4>
+              <p className="sect-text">Smart contracts written</p>
+              <Button
+                text={"Request smart contract"}
+                actionType={ButtonActionType.Anchor}
+                url="https://wy7qp680aox.typeform.com/to/WpoqqxS5"
+              ></Button>
+              {/* <button href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" className="sect-button">Request smart contract</button> */}
+            </div>
+            <div
+              className="exp-req exp-sect"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <h4 className="sect-number">
+                +<span className="dyn3"></span>
+              </h4>
+              <p className="sect-text">NFT collection launched</p>
+              <Button
+                text={"Request NFT collection"}
+                actionType={ButtonActionType.Anchor}
+                url="https://wy7qp680aox.typeform.com/to/WpoqqxS5"
+              ></Button>
+              {/* <button href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" className="sect-button">Request NFT collection</button> */}
             </div>
           </div>
-      
+        </div>
       </section>
     </>
-  )
-}
-
+  );
+};
 
 export default Expertise;

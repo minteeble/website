@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
@@ -18,6 +18,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const ReviewSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="review-section">
       <div className="shapes">
@@ -32,7 +35,7 @@ const ReviewSection = () => {
       <div className="container-as">
         <div className="row">
           <div className="column-as">
-            <div className="section-heading">
+            <div className="section-heading" data-aos="fade-right">
               <h2 className="after">What our customers think of us</h2>
               <p className="p-margin">
                 Over time we have created many projects and all our customers
