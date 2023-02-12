@@ -1,17 +1,26 @@
 $background-shape: linear-gradient(45deg, #1880bd, #189cbd 35%, #58d6c1 110%);
-
 footer {
   width: 100%;
   bottom: 0;
   position: relative;
   color: #fff;
-  background-color: #191919;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   height: auto;
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    .wave {
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+    }
+  }
 
   /*&::before{
-            display: block;
+    display: block;
+    
             background-image: url(../../images/Polygon.svg);
             background-position: 50%;
             background-repeat: no-repeat;
@@ -27,6 +36,8 @@ footer {
             
     }*/
   .footer-cont {
+    background-color: #191919;
+
     position: relative;
     padding: 16px 15px;
     margin: 0 auto;
@@ -47,9 +58,11 @@ footer {
         max-width: 330px;
 
         .logo-minte {
-          background: radial-gradient(50% 50% at 50% 50%,
+          background: radial-gradient(
+              50% 50% at 50% 50%,
               rgba(255, 255, 255, 6%) 0%,
-              rgba(255, 255, 255, 0) 100%),
+              rgba(255, 255, 255, 0) 100%
+            ),
             #191919;
         }
 
@@ -64,13 +77,11 @@ footer {
         max-width: 200px;
         display: flex;
         flex-direction: column;
-        .text{
-          
+        .text {
         }
-        
       }
-      @media screen and (max-width:550px){
-        .colum{
+      @media screen and (max-width: 550px) {
+        .colum {
           align-items: center;
         }
       }
@@ -95,8 +106,8 @@ footer {
           color: white;
           opacity: 0.7;
         }
-        a:hover{
-          opacity:1;
+        a:hover {
+          opacity: 1;
         }
 
         .color {
@@ -130,7 +141,6 @@ footer {
       }
 
       .row-ft-l {
-        
         padding: 10px;
         display: flex;
         flex-direction: row;
@@ -142,7 +152,6 @@ footer {
       }
 
       .right {
-        
         padding: 10px;
         display: flex;
         flex-direction: row;
@@ -157,36 +166,53 @@ footer {
     .line {
       margin-bottom: 30px;
     }
-    
-    a:hover{
-      .hover-i{
-        -webkit-text-fill-color: transparent; 
-        background:  conic-gradient(from 180deg at 50.73% 50%, #FDC367 0deg, #E1316D 43.39deg, #D02E90 90deg, #9938BD 136.88deg, #6359C9 181.87deg, #515DD1 224.65deg, #BE407B 271.87deg, #FDBB54 315.52deg, #FDC367 360deg);  
-        background-clip: text;  
+
+    a:hover {
+      .hover-i {
+        -webkit-text-fill-color: transparent;
+        background: conic-gradient(
+          from 180deg at 50.73% 50%,
+          #fdc367 0deg,
+          #e1316d 43.39deg,
+          #d02e90 90deg,
+          #9938bd 136.88deg,
+          #6359c9 181.87deg,
+          #515dd1 224.65deg,
+          #be407b 271.87deg,
+          #fdbb54 315.52deg,
+          #fdc367 360deg
+        );
+        background-clip: text;
         -webkit-background-clip: text;
       }
-      .hover-y{
-        color:#e1306c;
+      .hover-y {
+        color: #e1306c;
       }
-      .hover-t{
-        color:#405de6;
+      .hover-t {
+        color: #405de6;
       }
-      .youtube{
-        color:#e1306c;
+      .youtube {
+        color: #e1306c;
       }
-      .twitter{
-        color:#405de6;
+      .twitter {
+        color: #405de6;
       }
-      .instagram{
+      .instagram {
         border-radius: 5px;
-        background:  conic-gradient(from 180deg at 50.73% 50%, #FDC367 0deg, #E1316D 43.39deg, #D02E90 90deg, #9938BD 136.88deg, #6359C9 181.87deg, #515DD1 224.65deg, #BE407B 271.87deg, #FDBB54 315.52deg, #FDC367 360deg);  
+        background: conic-gradient(
+          from 180deg at 50.73% 50%,
+          #fdc367 0deg,
+          #e1316d 43.39deg,
+          #d02e90 90deg,
+          #9938bd 136.88deg,
+          #6359c9 181.87deg,
+          #515dd1 224.65deg,
+          #be407b 271.87deg,
+          #fdbb54 315.52deg,
+          #fdc367 360deg
+        );
       }
     }
-    
-
-      
-
-    
   }
 
   @import url("https://fonts.googleapis.com/css?family=Mukta:700");
@@ -195,9 +221,11 @@ footer {
   $white: #fff;
   $black: #282936;
 
-  @mixin transition($property: all,
+  @mixin transition(
+    $property: all,
     $duration: 0.45s,
-    $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
+    $ease: cubic-bezier(0.65, 0, 0.076, 1)
+  ) {
     transition: $property $duration $ease;
   }
 
@@ -234,13 +262,15 @@ footer {
         margin: 0;
         width: 3rem;
         height: 3rem;
-        background: LINEAR-GRADIENT(45deg,
-            #405de6,
-            #5851db,
-            #833ab4,
-            #c13584,
-            #e1306c,
-            #fd1d1d);
+        background: LINEAR-GRADIENT(
+          45deg,
+          #405de6,
+          #5851db,
+          #833ab4,
+          #c13584,
+          #e1306c,
+          #fd1d1d
+        );
         border-radius: 1.625rem;
 
         .socials-ft {
@@ -256,10 +286,6 @@ footer {
 
           &.socials {
             /*transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);*/
-
-
-
-
           }
         }
       }
@@ -279,7 +305,6 @@ footer {
         text-align: center;
         display: none;
       }
-
     }
   }
 
@@ -293,7 +318,6 @@ footer {
         height: 0;
         scale: 1.7;
       }
-
     }
 
     .button-text {
@@ -301,10 +325,7 @@ footer {
       display: block;
       @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
     }
-
   }
-
-
 
   @supports (display: grid) {
     body {
