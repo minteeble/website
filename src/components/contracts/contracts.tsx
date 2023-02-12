@@ -20,8 +20,8 @@ const contracts = () => {
 Minteeble Contracts helps you minimize risk by using battle-tested libraries of smart contracts for Ethereum and other blockchains. It includes the most used implementations of ERC standards.</p>
         </div>
         <div className="row">
-        <form className="margin-right" action="#features"><button className="bg-white cta flex-display">
-                Download Libraries  <div className="minte-custom"><img src="/build/images/logo.webp" alt="" /> </div>
+        <form className="margin-right"  target="_blank"  action="#features"><button className="bg-white cta flex-display">
+                Minteeble Libraries  <div className="minte-custom"><img src="/build/images/logo.webp" alt="" /> </div>
               </button></form>
         </div>
       </div>
