@@ -36,6 +36,16 @@ Our expertise in the blockchain field allows us to offer custom solutions for ea
               content={"Whether it is DeFi, NFT or other, the blockchain is always the core of our solutions."}
               icon={<FontAwesomeIcon className="icon" icon={faCubes} />}
               ></ServicesCard>
+              <ServicesCard 
+              title={"Dynamic Collection"}
+              content={"Whether it is DeFi, NFT or other, the blockchain is always the core of our solutions."}
+              icon={<FontAwesomeIcon className="icon" icon={faCubes} />}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Dynamic Collection"}
+              content={"Whether it is DeFi, NFT or other, the blockchain is always the core of our solutions."}
+              icon={<FontAwesomeIcon className="icon" icon={faCubes} />}
+              ></ServicesCard>
             </div>
           </div>
       
