@@ -12,8 +12,9 @@ const SlideShow = (props: SlideShowProps) => {
   const [counter, setCounter] = useState<number>(1);
   const [delay, setDelay] = useState<boolean>(true);
   const [rowLength, setRowLength] = useState<number>(0);
-  const [infiniteCheck, setInfiniteCheck] =
-    useState<{ check: boolean } | null>(null);
+  const [infiniteCheck, setInfiniteCheck] = useState<{ check: boolean } | null>(
+    null
+  );
 
   useEffect(() => {
     if (!delay) {
@@ -200,24 +201,24 @@ const SlideShow = (props: SlideShowProps) => {
               "--gap": `${gap}rem`,
             } as CSSProperties
           }
-          onWheel={(e) => {
-            if (delay) {
-              if (e.deltaX > 0) {
-                if (props.type === SlideShowType.Normal) {
-                  handleNext();
-                } else {
-                  handleInfiniteNext();
-                }
-              } else {
-                if (props.type === SlideShowType.Normal) {
-                  handlePrev();
-                } else {
-                  handleInfinitePrev();
-                }
-              }
-              setDelay(false);
-            }
-          }}
+          // onWheel={(e) => {
+          //   if (delay) {
+          //     if (e.deltaX > 0) {
+          //       if (props.type === SlideShowType.Normal) {
+          //         handleNext();
+          //       } else {
+          //         handleInfiniteNext();
+          //       }
+          //     } else {
+          //       if (props.type === SlideShowType.Normal) {
+          //         handlePrev();
+          //       } else {
+          //         handleInfinitePrev();
+          //       }
+          //     }
+          //     setDelay(false);
+          //   }
+          // }}
         >
           <button
             className={`prev ${

@@ -121,7 +121,7 @@ const Home = () => {
           autoScroll
           displayItems={3}
           itemWidth={22}
-          autoScrollDelay={6000}
+          autoScrollDelay={10000}
           gap={5}
           items={review.map((review, i) => {
             return (
