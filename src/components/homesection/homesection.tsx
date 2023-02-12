@@ -170,14 +170,16 @@ const homesection = () => {
             </div>
             <div className="button-cont">
               <a href="#features">
-<button className="cta ">Know more</button>
+<button className="cta bg-blue">Know more
+<FontAwesomeIcon className="margin-left" icon={faChevronDown}/>
+</button>
               </a>
 
 <button
           onClick={() => {
             handleForm.openPopup();
           }}
-          className="cta"
+          className="cta bg-white"
         >
           Talk to us
         </button>

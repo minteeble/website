@@ -8,6 +8,7 @@ import Navbar from "../../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import review from "./../../../review.json";
 
 // @ts-ignore
 import { loadFull } from "tsparticles";
@@ -55,7 +56,7 @@ const Home = () => {
   return (
     <>
       <Sidetab id="WpoqqxS5" buttonText="click to open" />
-      <Sectionhome />      
+      <Sectionhome />
       <Services></Services>
 
       <Expertise></Expertise>
@@ -114,63 +115,29 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="slideshow wrapper">
+      <div className="slideshow-wrapper">
         <SlideShow
           type={SlideShowType.Infinite}
           autoScroll
           displayItems={3}
-          itemWidth={20}
+          itemWidth={22}
+          autoScrollDelay={6000}
           gap={5}
-          items={[
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-            <Review
-              avatar={"https://picsum.photos/200"}
-              name={"lorem ipsum"}
-              job={"web developer"}
-              reviewBody={
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-              }
-            />,
-          ]}
+          items={review.map((review, i) => {
+            return (
+              <Review
+                key={i}
+                avatar={
+                  review.avatar
+                    ? `/build/images/review/${review.name}.webp`
+                    : "/build/images/review/user.svg"
+                }
+                name={review.name}
+                country={review.country}
+                reviewBody={review.body}
+              />
+            );
+          })}
         />
       </div>
 
