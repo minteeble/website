@@ -25,7 +25,9 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
         display: flex;
         gap: 1rem;
         margin-top: 1rem;
-
+a{
+    color: white;
+}
         .icon-size {
             font-size: 1.4rem;
 
@@ -488,27 +490,7 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
                     margin-right: 7%;
                 }
 
-                .bg-blue {
-                    background-color: #189cbd;
-                    color: white;
-
-                    &:hover {
-                        background-color: #48b5d0;
-                        box-shadow: 8px 12px 20px -3px rgb(15 125 161 / 56%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-
-                    }
-                }
-
-                .bg-white {
-                    background-color: white;
-                    color: #189cbd;
-
-                    &:hover {
-                        background-color: rgb(255, 255, 255);
-                        box-shadow: 8px 12px 20px -3px rgb(15 125 161 / 56%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-
-                    }
-                }
+               
 
             }
 
@@ -752,4 +734,28 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
             z-index: 1;
         }
     }
+}
+.bg-blue {
+    background-color: #189cbd;
+    color: white;
+
+    &:hover {
+        background-color: #48b5d0;
+        box-shadow: 0px 4px 20px 0px rgb(15 125 161 / 56%);
+    }
+}
+
+.bg-white {
+    background-color: white;
+    color: #189cbd;
+
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 4px 20px 0px rgb(15 125 161 / 56%)
+    }
+}
+.flex-display{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
