@@ -1,13 +1,16 @@
 .review {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
+  height: 40rem;
   color: white;
   .avatar-wrapper {
     width: 8rem;
     aspect-ratio: 1/1;
+    position: relative;
+
     .avatar {
       max-width: 100%;
       max-height: 100%;
@@ -21,7 +24,7 @@
     margin-top: 2rem;
     letter-spacing: 1px;
   }
-  .job {
+  .country {
     margin-top: 0.5rem;
     opacity: 0.5;
     font-size: 1.1rem;
@@ -30,10 +33,12 @@
   }
 
   .review-body {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.7rem;
+    font-size: 0.85rem;
+
     .quotes {
       margin-right: 1rem;
       font-size: 1.5rem;
