@@ -21,9 +21,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faCartShopping,
+  faCubes,
   faDisease,
   faMailBulk,
+  faPalette,
   faPaperPlane,
+  faPenRuler,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Features from "../../components/features";
@@ -51,8 +54,39 @@ const Home = () => {
     <>
       <Sidetab id="WpoqqxS5" buttonText="click to open" />
       <Sectionhome />
-
-      <Features />
+      {/*deve essere un component*/}
+      <section className="services" id="features">
+          <div className="ser-container">
+            <div className="ser-heading">
+              <h2 className="ser-heading-text" id="services">Services</h2>
+              <p className="ser-text">
+Our expertise in the blockchain field allows us to offer custom solutions for each project, from creating smart contracts to building advanced user interfaces for managing transactions. We are able to handle all levels of the development process, from design to implementation and maintenance.</p>
+            </div>
+            <div className="ser-cards">
+              <ServicesCard 
+              title={"Whitelist"}
+              content={"Whether it is DeFi, NFT or other, the blockchain is always the core of our solutions."}
+              icon={<FontAwesomeIcon className="icon" icon={faCubes} />}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Airdrop"}
+              content={"We can develop for you ad hoc designs. The only limitation is you imagination!"}
+              icon={<FontAwesomeIcon className="icon" icon={faPalette} />}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Mutation"}
+              content={"Your project is really ambitious and complex? No problem, we can implement all the high-end features you may need."}
+              icon={<FontAwesomeIcon className="icon" icon={faPenRuler} />}
+              ></ServicesCard>
+              <ServicesCard 
+              title={"Dynamic Collection"}
+              content={"Whether it is DeFi, NFT or other, the blockchain is always the core of our solutions."}
+              icon={<FontAwesomeIcon className="icon" icon={faCubes} />}
+              ></ServicesCard>
+            </div>
+          </div>
+      
+      </section>
 
       <Contracts />
       <div className="container-project">
@@ -253,47 +287,7 @@ const Home = () => {
           </div>
         </section>
  */}
-        <section className="services">
-          <div className="ser-container">
-            <div className="ser-heading">
-              <h2 className="ser-heading-text" id="services">Services</h2>
-              <p className="ser-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div className="ser-cards">
-              <ServicesCard 
-              title={"Title 1"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
-              icon={"x"}
-              ></ServicesCard>
-              <ServicesCard 
-              title={"Title 2"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
-              icon={"x"}
-              ></ServicesCard>
-              <ServicesCard 
-              title={"Title 3"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
-              icon={"x"}
-              ></ServicesCard>
-              <ServicesCard 
-              title={"Title 4"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
-              icon={"x"}
-              ></ServicesCard>
-              <ServicesCard 
-              title={"Title 5"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
-              icon={"x"}
-              ></ServicesCard>
-              <ServicesCard 
-              title={"Title 6"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}
-              icon={"x"}
-              ></ServicesCard>
-            </div>
-          </div>
-      
-      </section>
+  
 
       <Staytunned />
       <Contact />

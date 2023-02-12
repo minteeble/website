@@ -1,16 +1,48 @@
-.servicesCard-wrapper{
+.servicesCard-wrapper {
     background-color: rgb(15 33 49);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    transition: 0.5s ease;
 
-    .servicesCard-head{
+    &:hover {
+
+        transform: scale(1.1);
+        box-shadow: 10px 10px 10px -3px rgb(24 156 189 / 56%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+
+        .servicesCard-head {
+            .servicesCard-square {
+                color: #195e6fe0;
+                background-color: white;
+                transform: scale(1.1) translateY(-45%);
+                box-shadow: 7px 7px 7px -3px rgb(24 156 189 / 56%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+            }
+
+            .servicesCard-title {
+
+                color: #189cbd;
+            }
+        }
+        .servicesCard-foot{
+            .servicesCard-contact{
+                color:white;
+
+                .servicesCard-arrow{
+                    color:white;
+                }
+            }
+            
+        }
+
+    }
+
+    .servicesCard-head {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
         flex: 1 1 0%;
-        
-        .servicesCard-square{
+
+        .servicesCard-square {
             color: white;
             padding: 1.25rem;
             background-color: #189cbd;
@@ -21,16 +53,21 @@
             justify-content: center;
             width: 64px;
             height: 64px;
-            transform: translateY(-50%);
+            transform: scale(1) translateY(-50%);
+            transition: 0.5s ease;
+
+
         }
 
-        .servicesCard-title{
+        .servicesCard-title {
             color: rgb(243 244 246);
             font-weight: 500;
             font-size: 1.25rem;
             line-height: 1.75rem;
+            transition: 0.5s ease;
         }
-        .servicesCard-content{
+
+        .servicesCard-content {
             color: rgb(209 213 219);
             font-size: 1rem;
             line-height: 1.5rem;
@@ -39,36 +76,38 @@
         }
     }
 
-    .servicesCard-foot{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding: 1.5rem;
-    background-color: rgb(17 24 39);
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    .servicesCard-foot {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding: 1.5rem;
+        background-color: rgb(17 24 39);
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
 
-    .servicesCard-contact{
+        .servicesCard-contact {
 
-    color: #189cbd;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+            color: #189cbd;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            transition: 0.5s ease;
 
-    .servicesCard-arrow{
-        color: #189cbd;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        cursor: pointer;
+            .servicesCard-arrow {
+                color: #189cbd;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                cursor: pointer;
+                transition: 0.5s ease;
 
-    }
-    }
+            }
+        }
     }
 }
