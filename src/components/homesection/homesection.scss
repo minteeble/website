@@ -17,6 +17,12 @@ $backgr-shape-c-short: linear-gradient(90deg, #d3d4d5, #d3d4d5);
     display: flex;
     text-align: left;
     align-items: flex-end;
+@media screen and (max-width: 481px) {
+    padding: 0 2rem 5rem;
+}
+@media screen and (max-width: 420px) {
+    padding: 0 1rem 5rem;
+}
 
     // @media screen and (max-width:650px) {
     //     padding: 0 0.5rem;
@@ -445,7 +451,9 @@ a{
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-
+            @media screen and (max-width: 385px) {
+display: unset;
+            }
             a:hover {
                 cursor: pointer;
             }
@@ -554,6 +562,7 @@ a{
 
             .title {
                 text-transform: uppercase;
+              
             }
 
             .bold {
@@ -590,6 +599,15 @@ a{
                     margin: 0 0;
                     color: #53c2de;
                     animation: column-r-h1 1.5s ease forwards;
+                    @media screen and (max-width:550px) {
+                    
+                        font-size: 66px
+                 
+                }
+                @media screen and (max-width: 385px) {
+                    font-size: 55px
+
+                }
                 }
 
 
@@ -632,12 +650,7 @@ a{
                 }
             }
 
-            @media screen and (max-width:550px) {
-                .column-r h1 {
-                    font-size: 66px !important;
-                }
-
-            }
+            
         }
     }
 

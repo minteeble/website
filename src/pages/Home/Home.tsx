@@ -116,32 +116,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="slideshow-wrapper">
-        <SlideShow
-          type={SlideShowType.Infinite}
-          autoScroll
-          displayItems={3}
-          itemWidth={22}
-          autoScrollDelay={10000}
-          gap={5}
-          items={review.map((review, i) => {
-            return (
-              <Review
-                key={i}
-                avatar={
-                  review.avatar
-                    ? `/build/images/review/${review.name}.webp`
-                    : "/build/images/review/user.svg"
-                }
-                flag={review.flag}
-                name={review.name}
-                country={review.country}
-                reviewBody={review.body}
-              />
-            );
-          })}
-        />
-      </div>
+      
 <ReviewSection></ReviewSection>
 
       {/* <section className="team-section" id="team-section">
