@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faBars, faChevronDown, faDiagramProject, faHandsBubbles, faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faBars, faChevronDown, faDiagramProject, faHandsBubbles, faLightbulb, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Widget } from "@typeform/embed-react";
 
 import ReactPlayer from 'react-player'
 
@@ -9,10 +10,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Type from "../Type";
 import { faEthereum, faInstagram, faTiktok, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { Button } from "@minteeble/ui-components";
+import { Button, Popup, usePopup } from "@minteeble/ui-components";
 
 
 const homesection = () => {
+  const handleForm = usePopup();
+
 
   const mainShape = useRef<HTMLDivElement>(null);
   const ringR = useRef<HTMLDivElement>(null);
@@ -89,6 +92,20 @@ const homesection = () => {
 
   return (
     <section className="section-home" >
+       <Popup popupLogic={handleForm}>
+        <div className="form-wrapper">
+          <div className="form-header">
+            <FontAwesomeIcon
+              onClick={() => {
+                handleForm.closePopup();
+              }}
+              className="close"
+              icon={faXmark}
+            />
+          </div>
+          <Widget id="WpoqqxS5" style={{ height: "90%" }} className="my-form" />
+        </div>
+      </Popup>
       <div className="shapes">
 
         <div ref={mainShape} className="main-shape common-b">
@@ -152,10 +169,19 @@ const homesection = () => {
               <a href=""><FontAwesomeIcon className="icon-size youtube" icon={faYoutube} /></a>
             </div>
             <div className="button-cont">
-              <form className="margin-right" action="#features"><button className="b-decoration a-decoration b-backgr-color">
-                Know more  <FontAwesomeIcon icon={faChevronDown} />
-              </button></form>
-              <Button text={""}></Button>
+              <a href="#features">
+<button className="cta ">Know more</button>
+              </a>
+
+<button
+          onClick={() => {
+            handleForm.openPopup();
+          }}
+          className="cta"
+        >
+          Talk to us
+        </button>
+
               {/* <form action="Portfolio#website" ><button className="b-decoration a-decoration a-backgr-color">
                 Our Portfolio  <FontAwesomeIcon icon={faDiagramProject} />
               </button></form> */}
