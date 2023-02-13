@@ -70,13 +70,16 @@ const Expertise = () => {
       scrollY + window.innerHeight >= (ref.current?.offsetTop || 0) &&
       allowCounter
     ) {
-      counter(".dyn3", 0, 150, 10000);
-      setTimeout(() => {
-        counter(".dyn2", 0, 100, 10000);
+      setTimeout(()=>{
+
+        counter(".dyn3", 0, 150, 10000);
         setTimeout(() => {
-          counter(".dyn1", 0, 200, 10000);
-        });
-      }, 100);
+          counter(".dyn2", 0, 100, 10000);
+          setTimeout(() => {
+            counter(".dyn1", 0, 200, 10000);
+          });
+        }, 100);
+      },2500)
       setAllowCounter(false);
     }
   }, [scrollY]);
