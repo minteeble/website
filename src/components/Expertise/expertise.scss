@@ -1,6 +1,8 @@
 .services {
     .exp-container {
-
+        .cta{
+            width: 12rem;
+        }
         .exp-heading {
             text-align: center;
             margin-bottom: 84px;
@@ -91,13 +93,7 @@
 
                 }
 
-                .sect-button {
-                    background-color: white;
-                    padding: 0.8rem;
-                    border-radius: 6px;
-                    text-decoration: none;
-                    color: #199bbc;
-                }
+                
             }
         }
     }

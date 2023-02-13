@@ -98,7 +98,7 @@ const Expertise = () => {
 
               <h4 className="sect-number">+<span className="dyn2"></span></h4>
                 <p className="sect-text">Smart contracts written</p>
-                <Button text={"Request smart contract"} actionType={ButtonActionType.Anchor} url="https://wy7qp680aox.typeform.com/to/WpoqqxS5" ></Button>
+                <button className="cta bg-white" >Request smart contract</button>
                 {/* <button href="https://wy7qp680aox.typeform.com/to/WpoqqxS5" className="sect-button">Request smart contract</button> */}
               </div>
               <div className="exp-req exp-sect">
