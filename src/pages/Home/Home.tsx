@@ -1,46 +1,12 @@
 import React, { Component, useEffect, useState } from "react";
-import Type from "../../components/Type";
 // @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ScrollToTop from "react-scroll-to-top";
-import Navbar from "../../components/Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-import review from "./../../../review.json";
 
-// @ts-ignore
-import { loadFull } from "tsparticles";
-import { useCallback } from "react";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-  faTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faCartShopping,
-  faCubes,
-  faDisease,
-  faMailBulk,
-  faPalette,
-  faPaperPlane,
-  faPenRuler,
-} from "@fortawesome/free-solid-svg-icons";
-
-import Features from "../../components/features";
-import Asection from "../../components/ReviewSection";
-import Staytunned from "../../components/staytunedsection";
-import Footer from "../../components/Footer";
 import Sectionhome from "../../components/homesection";
 import Contracts from "../../components/contracts";
 import { Sidetab } from "@typeform/embed-react";
-import SlideShow, { SlideShowType } from "../../components/SlideShow";
-import Review from "../../components/Review";
 import Contact from "../../components/Contact";
-import ServicesCard from "../../components/ServicesCard";
 import Services from "../../components/Services";
 import Expertise from "../../components/Expertise";
 import ReviewSection from "../../components/ReviewSection";
@@ -116,8 +82,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      
-<ReviewSection></ReviewSection>
+      <ReviewSection></ReviewSection>
 
       {/* <section className="team-section" id="team-section">
           <div className="section-heading">

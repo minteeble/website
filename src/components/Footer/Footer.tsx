@@ -29,6 +29,7 @@ const Footer = () => {
               speed: 0.2,
               points: 5,
             }}
+            style={{ zIndex: 5 }}
           />
           <Wave
             className="wave"
@@ -40,6 +41,7 @@ const Footer = () => {
               speed: 0.15,
               points: 5,
             }}
+            style={{ zIndex: 4 }}
           />
           <Wave
             className="wave"
@@ -51,6 +53,7 @@ const Footer = () => {
               speed: 0.1,
               points: 5,
             }}
+            style={{ zIndex: 3 }}
           />
         </div>
         <div className="footer-cont">
@@ -95,7 +98,9 @@ const Footer = () => {
                         className="socials instagram"
                         icon={faInstagram}
                       />{" "}
-                      <span className="padding-left span hover-i">Instagram</span>
+                      <span className="padding-left span hover-i">
+                        Instagram
+                      </span>
                     </a>
                   </li>
                   <li>
