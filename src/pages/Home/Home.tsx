@@ -9,7 +9,7 @@ import { Sidetab } from "@typeform/embed-react";
 import Contact from "../../components/Contact";
 import Services from "../../components/Services";
 import Expertise from "../../components/Expertise";
-import ReviewSection from "../../components/ReviewSection";
+import ReviewSection from "../../components/Reviewsectionewg";
 
 const Home = () => {
   const [email, setEmail] = useState<string>("");

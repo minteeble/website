@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import SlideShow, { SlideShowType } from "../SlideShow";
 import Review from "../Review";
-import review from "./../../../review.json";
+import review from "../../../review.json";
 
 // @ts-ignore
 import AOS from "aos";
