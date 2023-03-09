@@ -6,9 +6,11 @@ import { Widget } from "@typeform/embed-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useNavigate } from "react-router";
 
 const Contact = () => {
   const handleForm = usePopup();
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init();
@@ -32,20 +34,36 @@ const Contact = () => {
       </Popup>
       <div className="contact" data-aos="zoom-in">
         <div className="title" data-aos="fade-down">
-          contact us
+          Contact us
         </div>
-        <div className="sub-text" data-aos="zoom-in">
-          Don't miss the opportunity to work and create your project.
+        <div className="sub-text epx-h4" data-aos="zoom-in">
+          Don't miss the opportunity to create your project.
         </div>
-        <button
-          data-aos="fade-up"
-          onClick={() => {
-            handleForm.openPopup();
-          }}
-          className="cta"
-        >
-          Talk to us
-        </button>
+        <p className="ser-text" data-aos="zoom-in">
+          Take a look at the projects we have created and the products we can
+          offer you, minting websites, dapps, marketplaces and much more on our
+          Portfolio.
+        </p>
+        <div className="row">
+          <button
+            data-aos="fade-up"
+            onClick={() => {
+              navigate("/portfolio");
+            }}
+            className="cta white"
+          >
+            See Portfolio
+          </button>
+          <button
+            data-aos="fade-up"
+            onClick={() => {
+              handleForm.openPopup();
+            }}
+            className="cta"
+          >
+            Talk to us
+          </button>
+        </div>
       </div>
     </>
   );

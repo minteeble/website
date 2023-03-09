@@ -26,7 +26,6 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import Header from "../../components/homesection";
-import Features from "../../components/features";
 import Asection from "../../components/ReviewSection";
 import Staytunned from "../../components/staytunedsection";
 import Footer from "../../components/Footer";

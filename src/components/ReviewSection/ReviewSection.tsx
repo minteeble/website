@@ -21,6 +21,28 @@ const ReviewSection = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const [items, setItems] = useState<number>(4);
+  // const size = useWindowSize();
+
+
+  // useEffect(() => {
+  //   if (size.width) {
+  //     if (size.width > 1200) {
+  //       setItems(4);
+  //     }
+  //     if (size.width <= 1200 && size.width > 992) {
+  //       setItems(3);
+  //     }
+  //     if (size.width <= 992 && size.width > 600) {
+  //       setItems(2);
+  //     }
+  //     if (size.width <= 600) {
+  //       setItems(1);
+  //     }
+  //   }
+  // }, [size.width]);
+
   return (
     <section className="review-section">
       <div className="shapes">

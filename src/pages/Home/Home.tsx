@@ -28,7 +28,7 @@ const Home = () => {
 
       <Expertise></Expertise>
 
-      <Contracts />
+      {/* <Contracts /> */}
 
       {/* <div className="container-project">
         <div className="main">

@@ -1,100 +1,97 @@
 .services {
-    .exp-container {
-        .cta{
-            width: 12rem;
-        }
-        .exp-heading {
-            text-align: center;
-            margin-bottom: 84px;
-
-            .exp-heading-text {
-                color: white;
-                margin: 0rem 1.5rem;
-                font-weight: 400;
-                font-size: 2.9rem;
-                letter-spacing: 0.05rem;
-                line-height: 1.2;
-
-                &::after {
-                    content: "";
-                    display: block;
-                    margin: 32px auto 24px;
-                    width: 40px;
-                    height: 2px;
-                    background-color: #189cbd;
-                }
-            }
-
-            .exp-h4 {
-                font-size: 35px;
-                margin-bottom: 1.7rem;
-                color: #199bbc;
-                text-align: center;
-
-            }
-
-            .exp-text {
-                font-weight: 400;
-                font-size: 21px;
-                margin: 1rem 2rem;
-                text-align: center;
-                color: gray;
-
-            }
-        }
-
-        .exp-cards {
-            border: #189cbd 1px solid;
-            border-radius: 10px;
-            display: grid;
-            column-gap: 0rem;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            background-color: #191919;
-            box-shadow: inset 0 0 0.2em 0 #189cbd, 0 0 0.2em 0 #189cbd;
-
-            @media screen  and (max-width: 920px) {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-
-                .exp-sect{
-                    &:not(:last-child) {
-                        border-bottom: #189cbd 1px solid;
-                        border-right: none !important;
-                    }
-                }
-                
-            }
-
-            .exp-sect {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-evenly;
-                gap: 1.2rem;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-
-                &:not(:last-child) {
-                    border-right: #189cbd 1px solid;
-                }
-
-                .sect-number {
-                    font-size: 2.9rem;
-                    color: #199bbc;
-                    text-align: center;
-                    text-shadow: 0 0 0.1em currentColor;
-
-                }
-
-                .sect-text {
-                    font-weight: 400;
-                    font-size: 21px;
-                    text-align: center;
-                    color: white;
-
-                }
-
-                
-            }
-        }
+  .exp-container {
+    .cta {
+      width: 12rem;
     }
+    .exp-heading {
+      text-align: end;
+      margin-bottom: 84px;
+
+      .exp-heading-text {
+        color: white;
+        margin: 0rem;
+        font-weight: 400;
+        font-size: 2.9rem;
+        letter-spacing: 0.05rem;
+        padding-bottom: 1rem;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 7rem;
+          height: 2px;
+          border-radius: 2px;
+          background: var(--primary-color);
+        }
+      }
+
+      .exp-h4 {
+        font-size: 35px;
+        margin-top: 1rem;
+
+        color: #199bbc;
+        text-align: end;
+      }
+
+      .exp-text {
+        font-weight: 400;
+        font-size: 21px;
+        margin: 1rem 0rem;
+        text-align: end;
+        color: gray;
+      }
+    }
+
+    .exp-cards {
+      border: #189cbd 1px solid;
+      border-radius: 10px;
+
+      display: grid;
+      column-gap: 0rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      background-color: #288fbd;
+      box-shadow: inset 0 0 3em 0 #1e759b, 0 0 1em 0 #ffffff;
+
+      @media screen and (max-width: 920px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+
+        .exp-sect {
+          &:not(:last-child) {
+            border-bottom: #189cbd 1px solid;
+            border-right: none !important;
+          }
+        }
+      }
+
+      .exp-sect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1.2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        &:not(:last-child) {
+          border-right: #189cbd 1px solid;
+        }
+
+        .sect-number {
+          font-size: 2.9rem;
+          color: white;
+          text-align: center;
+          text-shadow: 0 0 0.1em currentColor;
+        }
+
+        .sect-text {
+          font-weight: 400;
+          font-size: 21px;
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
 }
